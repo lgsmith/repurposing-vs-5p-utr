@@ -1,0 +1,11 @@
+*.bbl
+*.blg
+*.fls
+*.bcf
+*.aux
+*.log
+*.fdb_latexmk
+*.out
+*.synctex.gz
+repurposing-vs-5p-utr.pdf
+

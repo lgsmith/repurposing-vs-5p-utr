@@ -1,0 +1,18 @@
+@article{bowman2024,
+  title = {{{PopShift}}: {{A Thermodynamically Sound Approach}} to {{Estimate Binding Free Energies}} by {{Accounting}} for {{Ligand-Induced Population Shifts}} from a {{Ligand-Free Markov State Model}}},
+  shorttitle = {{{PopShift}}},
+  author = {Smith, Louis G. and Novak, Borna and Osato, Meghan and Mobley, David L. and Bowman, Gregory R.},
+  year = {2024},
+  month = feb,
+  journal = {Journal of Chemical Theory and Computation},
+  volume = {20},
+  number = {3},
+  pages = {1036--1050},
+  publisher = {American Chemical Society},
+  issn = {1549-9618},
+  doi = {10.1021/acs.jctc.3c00870},
+  urldate = {2024-02-23},
+  abstract = {Obtaining accurate binding free energies from in silico screens has been a long-standing goal for the computational chemistry community. However, accuracy and computational cost are at odds with one another, limiting the utility of methods that perform this type of calculation. Many methods achieve massive scale by explicitly or implicitly assuming that the target protein adopts a single structure, or undergoes limited fluctuations around that structure, to minimize computational cost. Others simulate each protein--ligand complex of interest, accepting lower throughput in exchange for better predictions of binding affinities. Here, we present the PopShift framework for accounting for the ensemble of structures a protein adopts and their relative probabilities. Protein degrees of freedom are enumerated once, and then arbitrarily many molecules can be screened against this ensemble. Specifically, we use Markov state models (MSMs) as a compressed representation of a protein's thermodynamic ensemble. We start with a ligand-free MSM and then calculate how addition of a ligand shifts the populations of each protein conformational state based on the strength of the interaction between that protein conformation and the ligand. In this work we use docking to estimate the affinity between a given protein structure and ligand, but any estimator of binding affinities could be used in the PopShift framework. We test PopShift on the classic benchmark pocket T4 Lysozyme L99A. We find that PopShift is more accurate than common strategies, such as docking to a single structure and traditional ensemble docking-producing results that compare favorably with alchemical binding free energy calculations in terms of RMSE but not correlation-and may have a more favorable computational cost profile in some applications. In addition to predicting binding free energies and ligand poses, PopShift also provides insight into how the probability of different protein structures is shifted upon addition of various concentrations of ligand, providing a platform for predicting affinities and allosteric effects of ligand binding. Therefore, we expect PopShift will be valuable for hit finding and for providing insight into phenomena like allostery.},
+  copyright = {Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC-BY-NC-ND)},
+  file = {/home/louis/Sync/lgs_zotero/Journal of Chemical Theory and Computation/2024/Smith ea_2024_PopShift.pdf}
+}
