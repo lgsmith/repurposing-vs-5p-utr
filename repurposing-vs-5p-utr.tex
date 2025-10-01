@@ -18,11 +18,15 @@
 %\setcitestyle{square} % for articles in the journals "Frontiers in Physics" and "Frontiers in Applied Mathematics and Statistics" 
 \usepackage{url,hyperref,lineno,microtype,subcaption}
 \usepackage[onehalfspacing]{setspace}
-% \usepackage[scaled]{helvet}
-\usepackage{helvet}
-\usepackage{palatino}
+\usepackage[scaled]{helvet}
+% \usepackage{helvet}
+
+% \usepackage{palatino}
 % \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
+\newcommand{\sprime}{\ensuremath{^\prime}}
+\newcommand{\fputr}{5\sprime-UTR}
+
 \linenumbers
 
 
@@ -41,15 +45,12 @@ $^{2}$Laboratory X, Institute X, Department X, Organization X, City X , State XX
 \def\corrAuthor{Corresponding Author}
 
 \def\corrEmail{email@uni.edu}
-\newcommand{\sprime}{\ensuremath{^\prime}}
-
-
 
 \begin{document}
 \onecolumn
 \firstpage{1}
 
-\title[Running Title]{5\sprime\ untranslated regions of disease-relevant messages are repurposing targets} 
+\title[Repurposing versus \fputr s]{5\sprime\ untranslated regions of disease-relevant messages are repurposing targets} 
 
 \author[\firstAuthorLast ]{\Authors} %This field will be automatically populated
 \address{} %This field will be automatically populated
@@ -77,62 +78,47 @@ As a primary goal, the abstract should render the general significance and conce
 
 \section{Introduction}
 
-For Original Research Articles \citep{conference}, Clinical Trial Articles \citep{article}, and Technology Reports \citep{patent}, the introduction should be succinct, with no subheadings \citep{book}. For Case Reports the Introduction should include symptoms at presentation \citep{chapter}, physical exams and lab results \citep{dataset}.
+Many of the most important messages in biology and disease have structurally conserved 5\sprime\ untranslated regions (\fputr) that carry out a myriad of functionally essential interactions to tune transcript output.
 
+Perturbation of this output often has disease relevance.
+
+Thus, these interactions constitute an attack surface, and finding binders modulating these complexes is likely to modulate the \fputr's function, and therefore disease biology.
+
+Repurposing is helpful in this context because, with an abundance of potentially relevant targets, having a smaller library of molecules with inherent commercial salience increases the feasibility of screening many such targets.(Arjun)
+
+% Don't worry about this sentence. It's only in here because I wanted to test the references typesetter.
 Ensemble docking is possible versus clustered structures from simulations \citep{bowman2024}.
 
-\section{Article types}
+\section{Structured and conserved \fputr UTRs are an underexploited attack surface for many diseases}
 
-For requirements for a specific article type please refer to the Article Types on any Frontiers journal page. Please also refer to  \href{http://home.frontiersin.org/about/author-guidelines#Sections}{Author Guidelines} for further information on how to organize your manuscript in the required sections or their equivalents for your field
+Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing.
 
-% For Original Research articles, please note that the Material and Methods section can be placed in any of the following ways: before Results, before Discussion or after Discussion.
+These types of targetable interactions exist in messages of key oncogens with highly conserved 5′UTR-structures such as C-JUN.
 
-\section{Manuscript Formatting}
+RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
 
-\subsection{Heading Levels}
+\section{There is evidence that FDA approved molecules bind to RNAs and modulate RNA-protein complexes}
 
-%There are 5 heading levels
+There are several known examples of RNP off-targets in the literature.
 
-\subsection{Level 2}
-\subsubsection{Level 3}
-\paragraph{Level 4}
-\subparagraph{Level 5}
+There are many molecules similar to known RNA binders in approved-molecule libraries.
 
-\subsection{Equations}
-Equations should be inserted in editable format from the equation editor.
+There are many molecules with physiologically relevant side effects that have unknown off-targets.
 
-\begin{equation}
-\sum x+ y =Z\label{eq:01}
-\end{equation}
+Previous research has shown that off-target bidning of small molecules to RNA in RNPs can effect cellular function.
 
-\subsection{Figures}
-Frontiers requires figures to be submitted individually, in the same order as they are referred to in the manuscript. Figures will then be automatically embedded at the bottom of the submitted manuscript. Kindly ensure that each table and figure is mentioned in the text and in numerical order. Figures must be of sufficient resolution for publication \href{https://www.frontiersin.org/about/author-guidelines#ImageSizeRequirements}{see here for examples and minimum requirements}. Figures which are not according to the guidelines will cause substantial delay during the production process. Please see \href{https://www.frontiersin.org/about/author-guidelines#FigureRequirementsStyleGuidelines}{here} for full figure guidelines. Cite figures with subfigures as figure \ref{fig:Subfigure 1} and \ref{fig:Subfigure 2}.
+\section{There is a path to virtually screening many potential targets within a \fputr of interest}
 
+Considering the \fputr of EV71 as a representative example, we can identify XXX targetable RNA elements, and YYY RNP complexes.
 
-\subsubsection{Permission to Reuse and Copyright}
-Figures, tables, and images will be published under a Creative Commons CC-BY licence and permission must be obtained for use of copyrighted material from other sources (including re-published/adapted/modified/partial figures and images from the internet). It is the responsibility of the authors to acquire the licenses, to follow any citation instructions requested by third-party rights holders, and cover any supplementary charges.
-%%Figures, tables, and images will be published under a Creative Commons CC-BY licence and permission must be obtained for use of copyrighted material from other sources (including re-published/adapted/modified/partial figures and images from the internet). It is the responsibility of the authors to acquire the licenses, to follow any citation instructions requested by third-party rights holders, and cover any supplementary charges.
+We can build models of these complexes using RNA-composer, and potentially other models that combine proteins and RNAs.
+To perform a virtual screen, we’d first run simulations of these complexes looking for pockets or other interfaces. (Vas)
 
-\subsection{Tables}
-Tables should be inserted at the end of the manuscript. Please build your table directly in LaTeX.Tables provided as jpeg/tiff files will not be accepted. Please note that very large tables (covering several pages) cannot be included in the final PDF for reasons of space. These tables will be published as \href{http://home.frontiersin.org/about/author-guidelines#SupplementaryMaterial}{Supplementary Material} on the online article page at the time of acceptance. The author will be notified during the typesetting of the final article if this is the case. 
+Docking would then be performed versus the ensembles that exhibit pockets using the Broad database, and using popshift to aggregate the docking results.
 
-\subsection{International Phonetic Alphabet}
-To include international phonetic alphabet (IPA) symbols, please include the following functions:
-Under useful packages, include:\begin{verbatim}\usepackage{tipa}\end{verbatim} 
-In the main text, when inputting symbols, use the following format:\begin{verbatim}\text[symbolname]\end{verbatim}e.g.\begin{verbatim}\textgamma\end{verbatim}
+Validation using biophysical tools such as: NMR chemical shift perturbations, DSF, and ITC would help move repurposed hits toward leads in an alternative therapy. (Barrington)
 
-\section{Nomenclature}
-
-\subsection{Resource Identification Initiative}
-To take part in the Resource Identification Initiative, please use the corresponding catalog number and RRID in your current manuscript. For more information about the project and for steps on how to search for an RRID, please click \href{http://www.frontiersin.org/files/pdf/letter_to_author.pdf}{here}.
-
-\subsection{Life Science Identifiers}
-Life Science Identifiers (LSIDs) for ZOOBANK registered names or nomenclatural acts should be listed in the manuscript before the keywords. For more information on LSIDs please see \href{https://www.frontiersin.org/about/author-guidelines#Nomenclature}{Inclusion of Zoological Nomenclature} section of the guidelines.
-
-
-\section{Additional Requirements}
-
-For additional requirements for specific article types and further information please refer to \href{http://www.frontiersin.org/about/AuthorGuidelines#AdditionalRequirements}{Author Guidelines}.
+\section{Discussion and Conclusion}
 
 \section*{Conflict of Interest Statement}
 %All financial, commercial or other relationships that might be perceived by the academic community as representing a potential conflict of interest must be disclosed. If no such relationship exists, authors will be asked to confirm the following statement: 
