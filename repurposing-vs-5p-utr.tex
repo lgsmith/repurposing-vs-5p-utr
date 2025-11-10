@@ -88,8 +88,8 @@ Recent advances---exemplified by AlphaFold3---now enable modeling of RNP complex
 When complemented by  MD simulations and biophysical interrogation, these predicted complexes provide a robust foundation for generating dynamic RNP ensembles suitable for virtual  screening. 
 Together, this hybrid framework links predictive modeling with empirical observation, yielding an experimentally anchored view of RNP structure that captures the transient and allosteric behaviors most relevant to function.
 
-Selecting the most suitable RNP interface to pursue as a drug target is challenging, given that a majority of expressed human transcripts---estimated at over 50\%---exhibit measurable RBP occupancy in vivo, as demonstrated by transcriptome-wide CLIP and RNA interactome capture studies \citet{yeo2020}. 
-For viruses, the prevalence of RBP-RNA interactions are predicted to be even higher, as both viral and cellular proteins engage viral RNA genomes at nearly every stage of the replication cycle \citet{kim2021,routh2022}.
+Selecting the most suitable RNP interface to pursue as a drug target is challenging, given that a majority of expressed human transcripts---estimated at over 50\%---exhibit measurable RBP occupancy in vivo, as demonstrated by transcriptome-wide CLIP and RNA interactome capture studies \citep{yeo2020}. 
+For viruses, the prevalence of RBP-RNA interactions are predicted to be even higher, as both viral and cellular proteins engage viral RNA genomes at nearly every stage of the replication cycle \citep{kim2021,routh2022}.
 During certain phases of the viral life cycle the abundance of both protein and RNA components may also be elevated far above those of cellular components. This pervasive binding creates a crowded and dynamic molecular environment that complicates the identification of discrete, druggable RNP interfaces.
 
 \begin{figure}
@@ -102,7 +102,7 @@ During certain phases of the viral life cycle the abundance of both protein and 
 Among cellular and viral RNA elements, 5\sprime untranslated regions (\fputr s) constitute rich and underexplored regulatory hubs with emerging potential as targets for SM modulation (Fig. \ref{fig:5p-utr-targets}). 
 \fputr s integrate structural motifs, chemical modifications, and protein interactions that collectively fine-tune ribosome recruitment, translation efficiency, and cellular responses to stress and signaling cues. 
 Their architectures are remarkably diverse, often folding into conserved secondary structures interspersed with bulges, junctions, and internal loops that serve as docking platforms for ribosomes, other RNA elements, regulatory proteins, and viral factors. 
-Furthermore, dysregulation of \fputr-mediated control is increasingly implicated in cancer, neurodegeneration, and viral pathogenesis, underscoring their functional importance \citet{hentze2012}.
+Furthermore, dysregulation of \fputr-mediated control is increasingly implicated in cancer, neurodegeneration, and viral pathogenesis, underscoring their functional importance \citep{hentze2012}.
 
 
 From a therapeutic standpoint, the modularity and structural plasticity of \fputr s make them compelling drug targets. 
@@ -112,8 +112,8 @@ Visualizing the conformational and RBP-interaction landscapes of \fputr s at ato
 Within these regulatory regions, bulge loops emerge as recurrent and functionally significant RNA structural motifs. 
 Local deviations from canonical helices expose unpaired nucleotides that frequently serve as recognition elements for RBPs and other ligands. 
 The conformational plasticity of bulge loops enables diverse binding modes, making them common interaction sites for RBPs involved in splicing, translation, and viral replication. 
-Consistent with this, SM-RNA interaction databases such as R-BIND identify bulge-containing motifs among the most prevalent structural classes engaged by bioactive ligands \citet{hargrove2022}. 
-Structural surveys further indicate that bulge loops constitute roughly 20-30\% of local secondary-structure motifs across cellular and viral RNAs, reflecting their prevalence in dynamic, ligand-accessible architectures (REF)\citet{patel2000}. 
+Consistent with this, SM-RNA interaction databases such as R-BIND identify bulge-containing motifs among the most prevalent structural classes engaged by bioactive ligands \citep{hargrove2022}. 
+Structural surveys further indicate that bulge loops constitute roughly 20-30\% of local secondary-structure motifs across cellular and viral RNAs, reflecting their prevalence in dynamic, ligand-accessible architectures \citep{patel2000}. 
 Collectively, these observations highlight bulge loops as privileged structural motifs for molecular recognition and as promising entry points for drug discovery targeting structured RNAs and RNP complexes.
 
 Integrating predictive and experimental structural data provides a powerful foundation for rational drug repurposing. 
@@ -121,7 +121,7 @@ While working with approved chemical matter accelerates any regulatory process d
 If the `library' is to be the set of approved molecules, the question becomes ``is the hit even in the library.'' 
 However, because of the multivalent and dynamic nature of \fputr s, those associated with disease are a target rich environment for modulators. 
 And because the disease condition materially elevates the abundance of these targets above that of cellular components, lower affinity molecules are viable, and may even be desirable, as therapies. 
-Finally, when it comes to transcription and translation performance, small deviations can alter the stoichiometry of disease-causing products enough to perturb disease physiology \citet{butcher2012}.
+Finally, when it comes to transcription and translation performance, small deviations can alter the stoichiometry of disease-causing products enough to perturb disease physiology \citep{butcher2012}.
 
 Structural ensembles generated through MD simulations initiated from AlphaFold3 models, and validated by NMR spectroscopy, can reveal transient binding pockets and allosteric surfaces that remain hidden in static structures. 
 These dynamic ensembles can be exploited to screen and prioritize approved small molecules whose physicochemical properties favor engagement with RNP interfaces. 
@@ -169,7 +169,7 @@ To perform a virtual screen, we'd first run simulations of these complexes looki
 
 Docking would then be performed versus the ensembles that exhibit pockets using the Broad drug repurposing hub database, and using PopShift to aggregate the docking results \citep{golub2017,bowman2024}.
 Virtual screening versus an ensemble is important because complexes involving RNA result in dynamic pockets \citep{al-hashimi2019}.
-Even typically `rigid' proteins exhibit pocket dynamics \citet{gilson2017, smith2018}.
+Even typically `rigid' proteins exhibit pocket dynamics \citep{gilson2017, smith2018}.
 PopShift addresses some issues with ensemble docking by using a discretized model of the ensemble (usually a Markov State Model (MSM)) to organize the receptor conformations to be docked to \cite{bowman2024}.
 Because PopShift scores which receptor conformations are preferred by different ligands, it can be used to understand rudimentary allosteric effects sampled by the ligand-free ensemble.
 
