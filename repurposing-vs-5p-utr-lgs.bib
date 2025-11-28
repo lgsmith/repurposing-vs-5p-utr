@@ -15,6 +15,44 @@
   file = {/home/louis/Sync/lgs_zotero/lit/20190812/Nucleic Acids Res/Al-Hashimi_Nucleic_Acids_Res_2019_Dynamic_ensemble_of.pdf;/home/louis/Zotero/storage/6NAWISGV/5519168.html}
 }
 
+@article{barnickel1997,
+  title = {{{LIGSITE}}: Automatic and Efficient Detection of Potential Small Molecule-Binding Sites in Proteins},
+  shorttitle = {{{LIGSITE}}},
+  author = {Hendlich, Manfred and Rippmann, Friedrich and Barnickel, Gerhard},
+  year = 1997,
+  month = dec,
+  journal = {Journal of Molecular Graphics and Modelling},
+  volume = {15},
+  number = {6},
+  pages = {359--363},
+  issn = {1093-3263},
+  doi = {10.1016/S1093-3263(98)00002-3},
+  urldate = {2025-11-28},
+  abstract = {LIGSITE is a new program for the automatic and time-efficient detection of pockets on the surface of proteins that may act as binding sites for small molecule ligands. Pockets are identified with a series of simple operations on a cubic grid. Using a set of receptor--ligand complexes we show that LIGSITE is able to identify the binding sites of small molecule ligands with high precision. The main advantage of LIGSITE is its speed. Typical search times are in the range of 5 to 20 s for medium-sized proteins. LIGSITE is therefore well suited for identification of pockets in large sets of proteins (e.g., protein families) for comparative studies. For graphical display LIGSITE produces VRML representations of the protein--ligand complex and the binding site for display with a VRML viewer such as WebSpace from SGI.},
+  keywords = {binding sites,pockets,protein ligands,receptor-ligand complexes,surface depressions,VRML},
+  file = {/home/louis/Zotero/storage/KAKCSCN3/S1093326398000023.html}
+}
+
+@article{bowman2023,
+  title = {Predicting Locations of Cryptic Pockets from Single Protein Structures Using the {{PocketMiner}} Graph Neural Network},
+  author = {Meller, Artur and Ward, Michael and Borowsky, Jonathan and Kshirsagar, Meghana and Lotthammer, Jeffrey M. and Oviedo, Felipe and Ferres, Juan Lavista and Bowman, Gregory R.},
+  year = 2023,
+  month = mar,
+  journal = {Nature Communications},
+  volume = {14},
+  number = {1},
+  pages = {1177},
+  publisher = {Nature Publishing Group},
+  issn = {2041-1723},
+  doi = {10.1038/s41467-023-36699-3},
+  urldate = {2024-06-10},
+  abstract = {Cryptic pockets expand the scope of drug discovery by enabling targeting of proteins currently considered undruggable because they lack pockets in their ground state structures. However, identifying cryptic pockets is labor-intensive and slow. The ability to accurately and rapidly predict if and where cryptic pockets are likely to form from a structure would greatly accelerate the search for druggable pockets. Here, we present PocketMiner, a graph neural network trained to predict where pockets are likely to open in molecular dynamics simulations. Applying PocketMiner to single structures from a newly curated dataset of 39 experimentally confirmed cryptic pockets demonstrates that it accurately identifies cryptic pockets (ROC-AUC: 0.87) {$>$}1,000-fold faster than existing methods. We apply PocketMiner across the human proteome and show that predicted pockets open in simulations, suggesting that over half of proteins thought to lack pockets based on available structures likely contain cryptic pockets, vastly expanding the potentially druggable proteome.},
+  copyright = {2023 The Author(s)},
+  langid = {english},
+  keywords = {Computational biophysics,Machine learning,Molecular modelling,Target identification},
+  file = {/home/louis/Sync/lgs_zotero/writing/TDP-43-K99/Meller_2023_Predicting.pdf}
+}
+
 @article{bowman2024,
   title = {{{PopShift}}: {{A Thermodynamically Sound Approach}} to {{Estimate Binding Free Energies}} by {{Accounting}} for {{Ligand-Induced Population Shifts}} from a {{Ligand-Free Markov State Model}}},
   shorttitle = {{{PopShift}}},
@@ -50,6 +88,24 @@
   abstract = {Introduction: HIV-1 uses a programmed --1 ribosomal frameshift to generate Gag-Pol, the precursor of its enzymes, when its full-length mRNA is translated by the ribosomes of the infected cells. This change in the reading frame occurs at a so-called slippery sequence that is followed by a specific secondary structure, the frameshift stimulatory signal. This signal controls the frameshift efficiency. The synthesis of HIV-1 enzymes is critical for virus replication and therefore, the --1 ribosomal frameshift could be the target of novel antiviral drugs. Areas covered: Various approaches were used to select drugs interfering with the --1 frameshift of HIV-1. These include the selection and modification of chemical compounds that specifically bind to the frameshift stimulatory signal, the use of antisense oligonucleotides targeting this signal and the selection of compounds that modulate HIV-1 frameshift, by using bicistronic reporters where the expression of the second cistron depends upon HIV-1 frameshift. Expert opinion: The most promising approach is the selection and modification of compounds specifically targeting the HIV-1 frameshift stimulatory signal. The use of antisense oligonucleotides binding to the frameshift stimulatory signal is still questionable. The use of bicistronic reporters preferentially selects compounds that modulate the frameshift by targeting the ribosomes, which is less promising.},
   keywords = {-1 ribosomal frameshift,antiframeshift agents,Gag-Pol:Gag ratio,HIV-1},
   file = {/home/louis/Zotero/storage/JD3WQ43L/Brakier-Gingras et al. - 2012 - Targeting frameshifting in the human immunodeficiency virus.pdf}
+}
+
+@article{defabritiis2016,
+  title = {{{HTMD}}: {{High-Throughput Molecular Dynamics}} for {{Molecular Discovery}}},
+  shorttitle = {{{HTMD}}},
+  author = {Doerr, S. and Harvey, M. J. and No{\'e}, Frank and De Fabritiis, G.},
+  year = 2016,
+  month = apr,
+  journal = {Journal of Chemical Theory and Computation},
+  volume = {12},
+  number = {4},
+  pages = {1845--1852},
+  publisher = {American Chemical Society},
+  issn = {1549-9618},
+  doi = {10.1021/acs.jctc.6b00049},
+  urldate = {2025-11-28},
+  abstract = {Recent advances in molecular simulations have allowed scientists to investigate slower biological processes than ever before. Together with these advances came an explosion of data that has transformed a traditionally computing-bound into a data-bound problem. Here, we present HTMD, a programmable, extensible platform written in Python that aims to solve the data generation and analysis problem as well as increase reproducibility by providing a complete workspace for simulation-based discovery. So far, HTMD includes system building for CHARMM and AMBER force fields, projection methods, clustering, molecular simulation production, adaptive sampling, an Amazon cloud interface, Markov state models, and visualization. As a result, a single, short HTMD script can lead from a PDB structure to useful quantities such as relaxation time scales, equilibrium populations, metastable conformations, and kinetic rates. In this paper, we focus on the adaptive sampling and Markov state modeling features.},
+  file = {/home/louis/Zotero/storage/RGTSIITG/Doerr et al. - 2016 - HTMD High-Throughput Molecular Dynamics for Molecular Discovery.pdf}
 }
 
 @article{dominguez2025,
@@ -156,6 +212,26 @@
   file = {/home/louis/Zotero/storage/GV4JAKRL/Castello et al. - 2012 - Insights into RNA Biology from an Atlas of Mammalian mRNA-Binding Proteins.pdf}
 }
 
+@article{jumper2024,
+  title = {Accurate Structure Prediction of Biomolecular Interactions with {{AlphaFold}} 3},
+  author = {Abramson, Josh and Adler, Jonas and Dunger, Jack and Evans, Richard and Green, Tim and Pritzel, Alexander and Ronneberger, Olaf and Willmore, Lindsay and Ballard, Andrew J. and Bambrick, Joshua and Bodenstein, Sebastian W. and Evans, David A. and Hung, Chia-Chun and O'Neill, Michael and Reiman, David and Tunyasuvunakool, Kathryn and Wu, Zachary and {\v Z}emgulyt{\.e}, Akvil{\.e} and Arvaniti, Eirini and Beattie, Charles and Bertolli, Ottavia and Bridgland, Alex and Cherepanov, Alexey and Congreve, Miles and {Cowen-Rivers}, Alexander I. and Cowie, Andrew and Figurnov, Michael and Fuchs, Fabian B. and Gladman, Hannah and Jain, Rishub and Khan, Yousuf A. and Low, Caroline M. R. and Perlin, Kuba and Potapenko, Anna and Savy, Pascal and Singh, Sukhdeep and Stecula, Adrian and Thillaisundaram, Ashok and Tong, Catherine and Yakneen, Sergei and Zhong, Ellen D. and Zielinski, Michal and {\v Z}{\'i}dek, Augustin and Bapst, Victor and Kohli, Pushmeet and Jaderberg, Max and Hassabis, Demis and Jumper, John M.},
+  year = 2024,
+  month = jun,
+  journal = {Nature},
+  volume = {630},
+  number = {8016},
+  pages = {493--500},
+  publisher = {Nature Publishing Group},
+  issn = {1476-4687},
+  doi = {10.1038/s41586-024-07487-w},
+  urldate = {2025-11-28},
+  abstract = {The introduction of AlphaFold\,21 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design2--6. Here we describe our AlphaFold\,3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues. The new AlphaFold model demonstrates substantially improved accuracy over many previous specialized tools: far greater accuracy for protein--ligand interactions compared with state-of-the-art docking tools, much higher accuracy for protein--nucleic acid interactions compared with nucleic-acid-specific predictors and substantially higher antibody--antigen prediction accuracy compared with AlphaFold-Multimer v.2.37,8. Together, these results show that high-accuracy modelling across biomolecular space is possible within a single unified deep-learning framework.},
+  copyright = {2024 The Author(s)},
+  langid = {english},
+  keywords = {Drug discovery,Machine learning,Protein structure predictions,Structural biology},
+  file = {/home/louis/Zotero/storage/BV98H7HK/Abramson et al. - 2024 - Accurate structure prediction of biomolecular interactions with AlphaFold 3.pdf}
+}
+
 @article{kim2021,
   title = {The {{SARS-CoV-2 RNA}} Interactome},
   author = {Lee, Sungyul and Lee, Young-suk and Choi, Yeon and Son, Ahyeon and Park, Youngran and Lee, Kyung-Min and Kim, Jeesoo and Kim, Jong-Seo and Kim, V. Narry},
@@ -191,6 +267,24 @@
   langid = {english},
   pmid = {22681889},
   file = {/home/louis/Zotero/storage/EJ2Z5TCG/Baltz et al. - 2012 - The mRNA-Bound Proteome and Its Global Occupancy Profile on Protein-Coding Transcripts.pdf}
+}
+
+@article{miao2021,
+  title = {Gaussian Accelerated Molecular Dynamics: {{Principles}} and Applications},
+  shorttitle = {Gaussian Accelerated Molecular Dynamics},
+  author = {Wang, Jinan and Arantes, Pablo R. and Bhattarai, Apurba and Hsu, Rohaine V. and Pawnikar, Shristi and Huang, Yu-ming M. and Palermo, Giulia and Miao, Yinglong},
+  year = 2021,
+  journal = {WIREs Computational Molecular Science},
+  volume = {11},
+  number = {5},
+  pages = {e1521},
+  issn = {1759-0884},
+  doi = {10.1002/wcms.1521},
+  urldate = {2022-10-21},
+  abstract = {Gaussian accelerated molecular dynamics (GaMD) is a robust computational method for simultaneous unconstrained enhanced sampling and free energy calculations of biomolecules. It works by adding a harmonic boost potential to smooth biomolecular potential energy surface and reduce energy barriers. GaMD greatly accelerates biomolecular simulations by orders of magnitude. Without the need to set predefined reaction coordinates or collective variables, GaMD provides unconstrained enhanced sampling and is advantageous for simulating complex biological processes. The GaMD boost potential exhibits a Gaussian distribution, thereby allowing for energetic reweighting via cumulant expansion to the second order (i.e., ``Gaussian approximation''). This leads to accurate reconstruction of free energy landscapes of biomolecules. Hybrid schemes with other enhanced sampling methods, such as the replica-exchange GaMD (rex-GaMD) and replica-exchange umbrella sampling GaMD (GaREUS), have also been introduced, further improving sampling and free energy calculations. Recently, new ``selective GaMD'' algorithms including the Ligand GaMD (LiGaMD) and Peptide GaMD (Pep-GaMD) enabled microsecond simulations to capture repetitive dissociation and binding of small-molecule ligands and highly flexible peptides. The simulations then allowed highly efficient quantitative characterization of the ligand/peptide binding thermodynamics and kinetics. Taken together, GaMD and its innovative variants are applicable to simulate a wide variety of biomolecular dynamics, including protein folding, conformational changes and allostery, ligand binding, peptide binding, protein--protein/nucleic acid/carbohydrate interactions, and carbohydrate/nucleic acid interactions. In this review, we present principles of the GaMD algorithms and recent applications in biomolecular simulations and drug design. This article is categorized under: Structure and Mechanism {$>$} Computational Biochemistry and Biophysics Molecular and Statistical Mechanics {$>$} Molecular Dynamics and Monte-Carlo Methods Molecular and Statistical Mechanics {$>$} Free Energy Methods},
+  langid = {english},
+  keywords = {drug binding,enhanced sampling,free energy calculations,membrane proteins,protein/nucleic acid complexes},
+  file = {/home/louis/Sync/lgs_zotero/algorithms/MD/WIREs Computational Molecular Science/Wang et al_2021_Gaussian.pdf;/home/louis/Zotero/storage/8353IJNK/wcms.html}
 }
 
 @article{patel2000,
@@ -242,6 +336,41 @@
   langid = {english},
   pmid = {29606412},
   file = {/home/louis/Sync/lgs_zotero/lit/20180514/Biophysical Journal/Smith_Biophysical_Journal_2018_Ensemble_Docking_in.pdf}
+}
+
+@article{tuffery2009,
+  title = {Fpocket: {{An}} Open Source Platform for Ligand Pocket Detection},
+  shorttitle = {Fpocket},
+  author = {Le Guilloux, Vincent and Schmidtke, Peter and Tuffery, Pierre},
+  year = 2009,
+  month = jun,
+  journal = {BMC Bioinformatics},
+  volume = {10},
+  number = {1},
+  pages = {168},
+  issn = {1471-2105},
+  doi = {10.1186/1471-2105-10-168},
+  urldate = {2025-11-28},
+  abstract = {Virtual screening methods start to be well established as effective approaches to identify hits, candidates and leads for drug discovery research. Among those, structure based virtual screening (SBVS) approaches aim at docking collections of small compounds in the target structure to identify potent compounds. For SBVS, the identification of candidate pockets in protein structures is a key feature, and the recent years have seen increasing interest in developing methods for pocket and cavity detection on protein surfaces.},
+  langid = {english},
+  keywords = {Acarbose,Binding Pocket,Holo Form,Voronoi Diagram,Voronoi Tessellation},
+  file = {/home/louis/Zotero/storage/KILLQDAG/Le Guilloux et al. - 2009 - Fpocket An open source platform for ligand pocket detection.pdf}
+}
+
+@article{weeks2025,
+  title = {Ligand-Binding Pockets in {{RNA}} and Where to Find Them},
+  author = {Veenbaas, Seth D. and Koehn, Jordan T. and Irving, Patrick S. and Lama, Nicole N. and Weeks, Kevin M.},
+  year = 2025,
+  month = apr,
+  journal = {Proceedings of the National Academy of Sciences},
+  volume = {122},
+  number = {17},
+  pages = {e2422346122},
+  publisher = {Proceedings of the National Academy of Sciences},
+  doi = {10.1073/pnas.2422346122},
+  urldate = {2025-04-23},
+  abstract = {RNAs are critical regulators of gene expression, and their functions are often mediated by complex secondary and tertiary structures. Structured regions in RNA can selectively interact with small molecules---via well-defined ligand-binding pockets---to modulate the regulatory repertoire of an RNA. The broad potential to modulate biological function intentionally via RNA--ligand interactions remains unrealized, however, due to challenges in identifying compact RNA motifs with the ability to bind ligands with good physicochemical properties (often termed drug-like). Here, we devise fpocketR, a computational strategy that accurately detects pockets capable of binding drug-like ligands in RNA structures. Remarkably few, roughly 50, of such pockets have ever been visualized. We experimentally confirmed the ligandability of novel pockets detected with fpocketR using a fragment-based approach introduced here, Frag-MaP, that detects ligand-binding sites in cells. Analysis of pockets detected by fpocketR and validated by Frag-MaP reveals dozens of sites able to bind drug-like ligands, supports a model for RNA secondary structural motifs able to bind quality ligands, and creates a broad framework for understanding the RNA ligand-ome.},
+  file = {/home/louis/Sync/lgs_zotero/Proceedings of the National Academy of Sciences/2025/Veenbaas ea_2025_Ligand-binding.pdf}
 }
 
 @article{westhof2006,
