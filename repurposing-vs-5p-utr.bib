@@ -1,19 +1,3 @@
-@article{al-hashimi2019,
-  title = {Dynamic Ensemble of {{HIV-1 RRE}} Stem {{IIB}} Reveals Non-Native Conformations That Disrupt the {{Rev-binding}} Site},
-  author = {Chu, Chia-Chieh and Plangger, Raphael and Kreutz, Christoph and {Al-Hashimi}, Hashim M.},
-  year = 2019,
-  month = jul,
-  journal = {Nucleic Acids Research},
-  volume = {47},
-  number = {13},
-  pages = {7105--7117},
-  issn = {0305-1048},
-  doi = {10.1093/nar/gkz498},
-  urldate = {2019-08-12},
-  abstract = {Abstract.  The HIV-1 Rev response element (RRE) RNA element mediates the nuclear export of intron containing viral RNAs by forming an oligomeric complex with th},
-  langid = {english},
-  file = {/home/louis/Sync/lgs_zotero/lit/20190812/Nucleic Acids Res/Al-Hashimi_Nucleic_Acids_Res_2019_Dynamic_ensemble_of.pdf;/home/louis/Zotero/storage/6NAWISGV/5519168.html}
-}
 @article{Miao2025,
    author = {Weili Miao and Douglas F. Porter and Vanessa Lopez-Pajares and Paul A. Khavari},
    doi = {10.1038/s41580-025-00914-4},
@@ -36,6 +20,7 @@
    volume = {475},
    year = {2011}
 }
+
 @article{Fang2023,
    author = {Linglan Fang and Willem A. Velema and Yujeong Lee and Lu Xiao and Michael G. Mohsen and Anna M. Kietrys and Eric T. Kool},
    doi = {10.1038/s41557-023-01309-8},
@@ -230,7 +215,7 @@
    year = {2011}
 }
 @article{Melamed2019,
-   author = {Ze’ev Melamed and Jone López-Erauskin and Michael W. Baughn and Ouyang Zhang and Kevin Drenner and Ying Sun and Fernande Freyermuth and Moira A. McMahon and Melinda S. Beccari and Jon W. Artates and Takuya Ohkubo and Maria Rodriguez and Nianwei Lin and Dongmei Wu and C. Frank Bennett and Frank Rigo and Sandrine Da Cruz and John Ravits and Clotilde Lagier-Tourenne and Don W. Cleveland},
+   author = {Ze{\'}ev Melamed and Jone López-Erauskin and Michael W. Baughn and Ouyang Zhang and Kevin Drenner and Ying Sun and Fernande Freyermuth and Moira A. McMahon and Melinda S. Beccari and Jon W. Artates and Takuya Ohkubo and Maria Rodriguez and Nianwei Lin and Dongmei Wu and C. Frank Bennett and Frank Rigo and Sandrine Da Cruz and John Ravits and Clotilde Lagier-Tourenne and Don W. Cleveland},
    doi = {10.1038/s41593-018-0293-z},
    issn = {1097-6256},
    issue = {2},
@@ -254,6 +239,7 @@
    volume = {11},
    year = {2020}
 }
+
 @article{Davila-Calderon2024,
    abstract = {<p> Selective pressures on viruses provide opportunities to establish target site specificity and mechanisms of antivirals. Enterovirus (EV)-A71 with resistant mutations in the stem loop (SL) II internal ribosome entry site (IRES) (SLII <sup>resist</sup> ) were selected at low doses of the antiviral dimethylamiloride (DMA)-135. The EV-A71 mutants were resistant to DMA-135 at concentrations that inhibit replication of wild-type virus. EV-A71 IRES structures harboring resistant mutations induced efficient expression of Luciferase messenger RNA in the presence of noncytotoxic doses of DMA-135. Nuclear magnetic resonance indicates that the mutations change the structure of SLII at the binding site of DMA-135 and at the surface recognized by the host protein AU-rich element/poly(U)-binding/degradation factor 1 (AUF1). Biophysical studies of complexes formed between AUF1, DMA-135, and either SLII or SLII <sup>resist</sup> show that DMA-135 stabilizes a ternary complex with AUF1-SLII but not AUF1-SLII <sup>resist</sup> . This work demonstrates how viral evolution elucidates the (DMA-135)–RNA binding site specificity in cells and provides insights into the viral pathways inhibited by the antiviral. </p>},
    author = {Jesse Davila-Calderon and Mei-Ling Li and Srinivasa R. Penumutchu and Christina Haddad and Linzy Malcolm and Josephine King and Amanda E. Hargrove and Gary Brewer and Blanton S. Tolbert},
@@ -267,27 +253,6 @@
    year = {2024}
 }
 
-
-
-@article{bowman2024,
-  title = {{{PopShift}}: {{A Thermodynamically Sound Approach}} to {{Estimate Binding Free Energies}} by {{Accounting}} for {{Ligand-Induced Population Shifts}} from a {{Ligand-Free Markov State Model}}},
-  shorttitle = {{{PopShift}}},
-  author = {Smith, Louis G. and Novak, Borna and Osato, Meghan and Mobley, David L. and Bowman, Gregory R.},
-  year = 2024,
-  month = feb,
-  journal = {Journal of Chemical Theory and Computation},
-  volume = {20},
-  number = {3},
-  pages = {1036--1050},
-  publisher = {American Chemical Society},
-  issn = {1549-9618},
-  doi = {10.1021/acs.jctc.3c00870},
-  urldate = {2024-02-23},
-  abstract = {Obtaining accurate binding free energies from in silico screens has been a long-standing goal for the computational chemistry community. However, accuracy and computational cost are at odds with one another, limiting the utility of methods that perform this type of calculation. Many methods achieve massive scale by explicitly or implicitly assuming that the target protein adopts a single structure, or undergoes limited fluctuations around that structure, to minimize computational cost. Others simulate each protein--ligand complex of interest, accepting lower throughput in exchange for better predictions of binding affinities. Here, we present the PopShift framework for accounting for the ensemble of structures a protein adopts and their relative probabilities. Protein degrees of freedom are enumerated once, and then arbitrarily many molecules can be screened against this ensemble. Specifically, we use Markov state models (MSMs) as a compressed representation of a protein's thermodynamic ensemble. We start with a ligand-free MSM and then calculate how addition of a ligand shifts the populations of each protein conformational state based on the strength of the interaction between that protein conformation and the ligand. In this work we use docking to estimate the affinity between a given protein structure and ligand, but any estimator of binding affinities could be used in the PopShift framework. We test PopShift on the classic benchmark pocket T4 Lysozyme L99A. We find that PopShift is more accurate than common strategies, such as docking to a single structure and traditional ensemble docking-producing results that compare favorably with alchemical binding free energy calculations in terms of RMSE but not correlation-and may have a more favorable computational cost profile in some applications. In addition to predicting binding free energies and ligand poses, PopShift also provides insight into how the probability of different protein structures is shifted upon addition of various concentrations of ligand, providing a platform for predicting affinities and allosteric effects of ligand binding. Therefore, we expect PopShift will be valuable for hit finding and for providing insight into phenomena like allostery.},
-  copyright = {Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC-BY-NC-ND)},
-  file = {/home/louis/Sync/lgs_zotero/Journal of Chemical Theory and Computation/2024/Smith ea_2024_PopShift.pdf}
-}
-
 @article{Ratni2021,
    author = {Hasane Ratni and Renata S. Scalco and Alexander H. Stephan},
    doi = {10.1021/acsmedchemlett.0c00659},
@@ -299,251 +264,4 @@
    title = {Risdiplam, the First Approved Small Molecule Splicing Modifier Drug as a Blueprint for Future Transformative Medicines},
    volume = {12},
    year = {2021}
-}
-
-@article{butcher2012,
-  title = {Targeting Frameshifting in the Human Immunodeficiency Virus},
-  author = {{Brakier-Gingras}, L{\'e}a and Charbonneau, Johanie and Butcher, Samuel E},
-  year = 2012,
-  month = mar,
-  journal = {Expert Opinion on Therapeutic Targets},
-  volume = {16},
-  number = {3},
-  pages = {249--258},
-  publisher = {Taylor \& Francis},
-  issn = {1472-8222},
-  doi = {10.1517/14728222.2012.665879},
-  urldate = {2025-11-09},
-  abstract = {Introduction: HIV-1 uses a programmed --1 ribosomal frameshift to generate Gag-Pol, the precursor of its enzymes, when its full-length mRNA is translated by the ribosomes of the infected cells. This change in the reading frame occurs at a so-called slippery sequence that is followed by a specific secondary structure, the frameshift stimulatory signal. This signal controls the frameshift efficiency. The synthesis of HIV-1 enzymes is critical for virus replication and therefore, the --1 ribosomal frameshift could be the target of novel antiviral drugs. Areas covered: Various approaches were used to select drugs interfering with the --1 frameshift of HIV-1. These include the selection and modification of chemical compounds that specifically bind to the frameshift stimulatory signal, the use of antisense oligonucleotides targeting this signal and the selection of compounds that modulate HIV-1 frameshift, by using bicistronic reporters where the expression of the second cistron depends upon HIV-1 frameshift. Expert opinion: The most promising approach is the selection and modification of compounds specifically targeting the HIV-1 frameshift stimulatory signal. The use of antisense oligonucleotides binding to the frameshift stimulatory signal is still questionable. The use of bicistronic reporters preferentially selects compounds that modulate the frameshift by targeting the ribosomes, which is less promising.},
-  keywords = {-1 ribosomal frameshift,antiframeshift agents,Gag-Pol:Gag ratio,HIV-1},
-  file = {/home/louis/Zotero/storage/JD3WQ43L/Brakier-Gingras et al. - 2012 - Targeting frameshifting in the human immunodeficiency virus.pdf}
-}
-
-@article{dominguez2025,
-  title = {Dissecting {{RNA}} Selectivity Mediated by Tandem {{RNA-binding}} Domains},
-  author = {Harris, Sarah E. and Hu, Yue and Bridges, Kaitlin and Cavazos, Francisco F. and Martyr, Justin G. and Guzm{\'a}n, Bryan B. and Murn, Jernej and Aleman, Maria M. and Dominguez, Daniel},
-  year = 2025,
-  month = mar,
-  journal = {Journal of Biological Chemistry},
-  volume = {0},
-  number = {0},
-  publisher = {Elsevier},
-  issn = {0021-9258, 1083-351X},
-  doi = {10.1016/j.jbc.2025.108435},
-  urldate = {2025-03-26},
-  abstract = {{$<$}h2{$>$}Abstract{$<$}/h2{$><$}p{$>$}RNA-protein interactions are pivotal to proper gene regulation. Many RNA-binding proteins possess multiple RNA-binding domains; however, how these domains interplay to select and regulate RNA targets remains poorly understood. Here, we investigate three multi-domain proteins, Musashi-1, Musashi-2, and unkempt, which share a high degree of RNA specificity, a common feature across RNA-binding proteins. We used massively parallel \emph{in vitro} assays with unprecedented depth with random or naturally-derived RNA sequences and find that individual domains within a protein can have differing affinities, specificities, and motif spacing preferences. We conducted large scale competition assays between these proteins and determined how individual protein specificities and affinities influence competitive binding. Integration of binding and regulation \emph{in cells} with \emph{in vitro} specificities showed that target selection involves a combination of the protein intrinsic specificities described here, but cellular context is critical to drive these proteins to motifs in specific transcript regions. Finally, evolutionarily conserved RNA regions displayed evidence of binding multiple RBPs \emph{in cultured cells}, and these RNA regions represent the highest affinity targets. This work emphasizes the importance of \emph{in vitro} and \emph{in cultured cells} studies to fully profile RNA-binding proteins and highlights the complex modes of RNA-protein interactions and the contributing factors in target selection.{$<$}/p{$>$}},
-  langid = {english},
-  pmid = {40120682},
-  file = {/home/louis/Zotero/storage/5ZG4Z5YG/Harris et al. - 2025 - Dissecting RNA selectivity mediated by tandem RNA-binding domains.pdf}
-}
-
-@article{gilson2017,
-  title = {Predicting Binding Free Energies: {{Frontiers}} and Benchmarks (a Perpetual Review)},
-  shorttitle = {Predicting Binding Free Energies},
-  author = {Mobley, David L. and Heinzelmann, Germano and Henriksen, Niel M. and Gilson, Michael K.},
-  year = 2017,
-  month = aug,
-  urldate = {2023-10-01},
-  abstract = {Binding free energy calculations based on molecular simulations provide predicted affinities for biomolecular complexes.These calculations begin with a detailed description of a system, including its chemical composition and the interactions between its components.Simulations of the system are then used to compute thermodynamic information, such as binding affinities.Because of their growing promise for guiding molecular design, these calculations have recently begun to see widespread applications in early stage drug discovery.However, many challenges remain to make them a robust and reliable tool.\&nbsp;Here, we highlight key challenges facing these calculations, describe known examples of these challenges, and call for the designation of standard community benchmark test systems that will help the research community generate and evaluate progress.In our view, progress will require careful assessment and evaluation of new methods, force fields, and modeling innovations on well-characterized benchmark systems, and we lay out our vision for how this can be achieved.\&nbsp; \&nbsp;This repository relates to the perpetual review (definition) paper called "Predicting binding free energies: Frontiers and benchmarks" by David L. Mobley, Germano Heinzelmann and Michael K. Gilson. Its focus is benchmark sets for binding free energy calculations, including the perpetual review paper, but also all things relating to benchmark sets for free energy calculations. This includes discussion, datasets, and standards for datasets and data deposition.\&nbsp; \&nbsp;This work is posted with permission from the Annual Review of Biophysics, Volume 46 \copyright{} 2017 by Annual Reviews. Only the Annual Reviews version of the work is peer reviewed; versions posted here are effectively preprints updated at the authors' discretion. The right to create derivative works (exercised here) is also exercised with permission from the Annual Review of Biophysics, Volume 46 \copyright{} 2017 by Annual Reviews, http://www.annualreviews.org/ \&nbsp; \&nbsp;Updated versions of this work are maintained at github.com/mobleylab/benchmarksets and this eScholarship archive serves to archive release versions of the work.},
-  langid = {english},
-  file = {/home/louis/Zotero/storage/BMWNCKBN/9p37m6bq.html}
-}
-
-@article{golub2017,
-  title = {The {{Drug Repurposing Hub}}: A next-Generation Drug Library and Information Resource},
-  shorttitle = {The {{Drug Repurposing Hub}}},
-  author = {Corsello, Steven M. and Bittker, Joshua A. and Liu, Zihan and Gould, Joshua and McCarren, Patrick and Hirschman, Jodi E. and Johnston, Stephen E. and Vrcic, Anita and Wong, Bang and Khan, Mariya and Asiedu, Jacob and Narayan, Rajiv and Mader, Christopher C. and Subramanian, Aravind and Golub, Todd R.},
-  year = 2017,
-  month = apr,
-  journal = {Nature Medicine},
-  volume = {23},
-  number = {4},
-  pages = {405--408},
-  publisher = {Nature Publishing Group},
-  issn = {1546-170X},
-  doi = {10.1038/nm.4306},
-  urldate = {2025-09-08},
-  copyright = {2017 Springer Nature America, Inc.},
-  langid = {english},
-  keywords = {Chemical libraries,Drug development,Drug screening,Pharmacology},
-  file = {/home/louis/Zotero/storage/I4VF7MM3/Corsello et al. - 2017 - The Drug Repurposing Hub a next-generation drug library and information resource.pdf;/home/louis/Zotero/storage/TIETSTWX/Corsello et al. - 2017 - The Drug Repurposing Hub a next-generation drug library and information resource.pdf}
-}
-
-@article{hargrove2022,
-  title = {R-{{BIND}} 2.0: {{An Updated Database}} of {{Bioactive RNA-Targeting Small Molecules}} and {{Associated RNA Secondary Structures}}},
-  shorttitle = {R-{{BIND}} 2.0},
-  author = {Donlic, Anita and Swanson, Emily G. and Chiu, Liang-Yuan and Wicks, Sarah L. and Juru, Aline Umuhire and Cai, Zhengguo and Kassam, Kamillah and Laudeman, Chris and Sanaba, Bilva G. and Sugarman, Andrew and Han, Eunseong and Tolbert, Blanton S. and Hargrove, Amanda E.},
-  year = 2022,
-  month = jun,
-  journal = {ACS Chemical Biology},
-  volume = {17},
-  number = {6},
-  pages = {1556--1566},
-  publisher = {American Chemical Society},
-  issn = {1554-8929},
-  doi = {10.1021/acschembio.2c00224},
-  urldate = {2025-11-08},
-  abstract = {Discoveries of RNA roles in cellular physiology and pathology are increasing the need for new tools that modulate the structure and function of these biomolecules, and small molecules are proving useful. In 2017, we curated the RNA-targeted BIoactive ligaNd Database (R-BIND) and discovered distinguishing physicochemical properties of RNA-targeting ligands, leading us to propose the existence of an ``RNA-privileged'' chemical space. Biennial updates of the database and the establishment of a website platform (rbind.chem.duke.edu) have provided new insights and tools to design small molecules based on the analyzed physicochemical and spatial properties. In this report and R-BIND 2.0 update, we refined the curation approach and ligand classification system as well as conducted analyses of RNA structure elements for the first time to identify new targeting strategies. Specifically, we curated and analyzed RNA target structural motifs to determine the properties of small molecules that may confer selectivity for distinct RNA secondary and tertiary structures. Additionally, we collected sequences of target structures and incorporated an RNA structure search algorithm into the website that outputs small molecules targeting similar motifs without a priori secondary structure knowledge. Cheminformatic analyses revealed that, despite the 50\% increase in small molecule library size, the distinguishing properties of R-BIND ligands remained significantly different from that of proteins and are therefore still relevant to RNA-targeted probe discovery. Combined, we expect these novel insights and website features to enable the rational design of RNA-targeted ligands and to serve as a resource and inspiration for a variety of scientists interested in RNA targeting.},
-  file = {/home/louis/Zotero/storage/FUCXJLH9/Donlic et al. - 2022 - R-BIND 2.0 An Updated Database of Bioactive RNA-Targeting Small Molecules and Associated RNA Second.pdf}
-}
-
-@article{hennig2025,
-  title = {Structural {{Biology}} of {{RNA}} and {{Protein-RNA Complexes}} after {{AlphaFold3}}},
-  author = {Hennig, Janosch},
-  year = 2025,
-  journal = {ChemBioChem},
-  volume = {26},
-  number = {7},
-  pages = {e202401047},
-  issn = {1439-7633},
-  doi = {10.1002/cbic.202401047},
-  urldate = {2025-10-08},
-  abstract = {Recent breakthroughs in AI-mediated protein structure prediction have significantly accelerated research and generated valuable hypotheses within the field of structural biology and beyond. Notably, AlphaFold2 has facilitated the determination of larger protein complexes for which only limited experimental data are available. De novo predictions can now be experimentally validated with relative ease compared to the pre-AlphaFold2 era. In May 2024, AlphaFold3 was launched with high expectations, promising the capability to accurately predict RNA structures and protein-RNA complexes - features that were absent in AlphaFold2. This review evaluates the extent to which AlphaFold3 fulfills this promise through specific examples. At present, AlphaFold3 falls short in reliably predicting RNA and protein-RNA complex structures, particularly for non-canonical interactions where training data remain scarce. As a result, users should exercise caution when using AlphaFold3 predictions as hypotheses generators for RNA and protein-RNA complex structures. In the interim, integrating AI-based predictors with data-driven docking tools is recommended to address these limitations. This approach can help bridge the gap until sufficient training data are available to enable the development of more reliable predictive algorithms.},
-  copyright = {\copyright{} 2025 The Author(s). ChemBioChem published by Wiley-VCH GmbH},
-  langid = {english},
-  keywords = {AlphaFold,protein-RNA complexes,RNA dynamics,RNA structure,structural biology},
-  file = {/home/louis/Zotero/storage/77SUGHLM/Hennig - 2025 - Structural Biology of RNA and Protein-RNA Complexes after AlphaFold3.pdf;/home/louis/Zotero/storage/6W5IAJW4/cbic.html}
-}
-
-@article{hentze2012,
-  title = {Insights into {{RNA Biology}} from an {{Atlas}} of {{Mammalian mRNA-Binding Proteins}}},
-  author = {Castello, Alfredo and Fischer, Bernd and Eichelbaum, Katrin and Horos, Rastislav and Beckmann, Benedikt M. and Strein, Claudia and Davey, Norman E. and Humphreys, David T. and Preiss, Thomas and Steinmetz, Lars M. and Krijgsveld, Jeroen and Hentze, Matthias W.},
-  year = 2012,
-  month = jun,
-  journal = {Cell},
-  volume = {149},
-  number = {6},
-  pages = {1393--1406},
-  publisher = {Elsevier},
-  issn = {0092-8674, 1097-4172},
-  doi = {10.1016/j.cell.2012.04.031},
-  urldate = {2025-11-01},
-  langid = {english},
-  pmid = {22658674},
-  file = {/home/louis/Zotero/storage/GV4JAKRL/Castello et al. - 2012 - Insights into RNA Biology from an Atlas of Mammalian mRNA-Binding Proteins.pdf}
-}
-
-@article{kim2021,
-  title = {The {{SARS-CoV-2 RNA}} Interactome},
-  author = {Lee, Sungyul and Lee, Young-suk and Choi, Yeon and Son, Ahyeon and Park, Youngran and Lee, Kyung-Min and Kim, Jeesoo and Kim, Jong-Seo and Kim, V. Narry},
-  year = 2021,
-  month = jul,
-  journal = {Molecular Cell},
-  volume = {81},
-  number = {13},
-  pages = {2838-2850.e6},
-  publisher = {Elsevier},
-  issn = {1097-2765},
-  doi = {10.1016/j.molcel.2021.04.022},
-  urldate = {2025-11-08},
-  langid = {english},
-  pmid = {33989516},
-  keywords = {coronavirus,COVID-19,HCoV-OC43,LARP1,mass spectrometry,RNA,RNA interactome capture,RNA-binding proteins,SARS-CoV-2,virus},
-  file = {/home/louis/Zotero/storage/8D6HJFQM/Lee et al. - 2021 - The SARS-CoV-2 RNA interactome.pdf}
-}
-
-@article{landthaler2012,
-  title = {The {{mRNA-Bound Proteome}} and {{Its Global Occupancy Profile}} on {{Protein-Coding Transcripts}}},
-  author = {Baltz, Alexander G. and Munschauer, Mathias and Schwanh{\"a}usser, Bj{\"o}rn and Vasile, Alexandra and Murakawa, Yasuhiro and Schueler, Markus and Youngs, Noah and {Penfold-Brown}, Duncan and Drew, Kevin and Milek, Miha and Wyler, Emanuel and Bonneau, Richard and Selbach, Matthias and Dieterich, Christoph and Landthaler, Markus},
-  year = 2012,
-  month = jun,
-  journal = {Molecular Cell},
-  volume = {46},
-  number = {5},
-  pages = {674--690},
-  publisher = {Elsevier},
-  issn = {1097-2765},
-  doi = {10.1016/j.molcel.2012.05.021},
-  urldate = {2025-11-01},
-  langid = {english},
-  pmid = {22681889},
-  file = {/home/louis/Zotero/storage/EJ2Z5TCG/Baltz et al. - 2012 - The mRNA-Bound Proteome and Its Global Occupancy Profile on Protein-Coding Transcripts.pdf}
-}
-
-@article{patel2000,
-  title = {{{RNA}} Bulges as Architectural and Recognition Motifs},
-  author = {Hermann, Thomas and Patel, Dinshaw J},
-  year = 2000,
-  month = mar,
-  journal = {Structure},
-  volume = {8},
-  number = {3},
-  pages = {R47-R54},
-  issn = {0969-2126},
-  doi = {10.1016/S0969-2126(00)00110-6},
-  urldate = {2025-10-08},
-  abstract = {RNA bulges constitute versatile structural motifs in the assembly of RNA architectures. Three-dimensional structures of RNA molecules and their complexes reveal the role of bulges in RNA architectures and illustrate the molecular mechanisms by which they confer intramolecular interactions and intermolecular recognition.},
-  file = {/home/louis/Zotero/storage/E93M4EAB/Hermann and Patel - 2000 - RNA bulges as architectural and recognition motifs.pdf;/home/louis/Zotero/storage/RGDSES3S/S0969212600001106.html}
-}
-
-@article{routh2022,
-  title = {Next-Generation Sequencing: {{A}} New Avenue to Understand Viral {{RNA}}--Protein Interactions},
-  shorttitle = {Next-Generation Sequencing},
-  author = {Zhou, Yiyang and Sotcheff, Stephanea L. and Routh, Andrew L.},
-  year = 2022,
-  month = may,
-  journal = {Journal of Biological Chemistry},
-  volume = {298},
-  number = {5},
-  publisher = {Elsevier},
-  issn = {0021-9258, 1083-351X},
-  doi = {10.1016/j.jbc.2022.101924},
-  urldate = {2025-11-08},
-  abstract = {{$<$}p{$>$}The genomes of RNA viruses present an astonishing source of both sequence and structural diversity. From intracellular viral RNA-host interfaces to interactions between the RNA genome and structural proteins in virus particles themselves, almost the entire viral lifecycle is accompanied by a myriad of RNA--protein interactions that are required to fulfill their replicative potential. It is therefore important to characterize such rich and dynamic collections of viral RNA--protein interactions to understand virus evolution and their adaptation to their hosts and environment. Recent advances in next-generation sequencing technologies have allowed the characterization of viral RNA--protein interactions, including both transient and conserved interactions, where molecular and structural approaches have fallen short. In this review, we will provide a methodological overview of the high-throughput techniques used to study viral RNA--protein interactions, their biochemical mechanisms, and how they evolved from classical methods as well as one another. We will discuss how different techniques have fueled virus research to characterize how viral RNA and proteins interact, both locally and on a global scale. Finally, we will present examples on how these techniques influence the studies of clinically important pathogens such as HIV-1 and SARS-CoV-2.{$<$}/p{$>$}},
-  langid = {english},
-  pmid = {35413291},
-  file = {/home/louis/Zotero/storage/X7YZJYL6/Zhou et al. - 2022 - Next-generation sequencing A new avenue to understand viral RNA–protein interactions.pdf}
-}
-
-@article{smith2018,
-  title = {Ensemble {{Docking}} in {{Drug Discovery}}},
-  author = {Amaro, Rommie E. and Baudry, Jerome and Chodera, John and Demir, {\"O}zlem and McCammon, J. Andrew and Miao, Yinglong and Smith, Jeremy C.},
-  year = 2018,
-  month = mar,
-  journal = {Biophysical Journal},
-  volume = {0},
-  number = {0},
-  issn = {0006-3495},
-  doi = {10.1016/j.bpj.2018.02.038},
-  urldate = {2018-05-14},
-  langid = {english},
-  pmid = {29606412},
-  file = {/home/louis/Sync/lgs_zotero/lit/20180514/Biophysical Journal/Smith_Biophysical_Journal_2018_Ensemble_Docking_in.pdf}
-}
-
-@article{westhof2006,
-  title = {The Building Blocks and Motifs of {{RNA}} Architecture},
-  author = {Leontis, Neocles B and Lescoute, Aurelie and Westhof, Eric},
-  year = 2006,
-  month = jun,
-  journal = {Current Opinion in Structural Biology},
-  series = {Nucleic Acids/{{Sequences}} and Topology},
-  volume = {16},
-  number = {3},
-  pages = {279--287},
-  issn = {0959-440X},
-  doi = {10.1016/j.sbi.2006.05.009},
-  urldate = {2025-11-08},
-  abstract = {RNA motifs can be defined broadly as recurrent structural elements containing multiple intramolecular RNA--RNA interactions, as observed in atomic-resolution RNA structures. They constitute the modular building blocks of RNA architecture, which is organized hierarchically. Recent work has focused on analyzing RNA backbone conformations to identify, define and search for new instances of recurrent motifs in X-ray structures. One current view asserts that recurrent RNA strand segments with characteristic backbone configurations qualify as independent motifs. Other considerations indicate that, to characterize modular motifs, one must take into account the larger structural context of such strand segments. This follows the biologically relevant motivation, which is to identify RNA structural characteristics that are subject to sequence constraints and that thus relate RNA architectures to sequences.},
-  file = {/home/louis/Zotero/storage/QVEVI7SW/Leontis et al. - 2006 - The building blocks and motifs of RNA architecture.pdf;/home/louis/Zotero/storage/KXJHS4DI/S0959440X06000807.html}
-}
-
-@article{yeo2020,
-  title = {A Large-Scale Binding and Functional Map of Human {{RNA-binding}} Proteins},
-  author = {Van Nostrand, Eric L. and Freese, Peter and Pratt, Gabriel A. and Wang, Xiaofeng and Wei, Xintao and Xiao, Rui and Blue, Steven M. and Chen, Jia-Yu and Cody, Neal A. L. and Dominguez, Daniel and Olson, Sara and Sundararaman, Balaji and Zhan, Lijun and Bazile, Cassandra and Bouvrette, Louis Philip Benoit and Bergalet, Julie and Duff, Michael O. and Garcia, Keri E. and {Gelboin-Burkhart}, Chelsea and Hochman, Myles and Lambert, Nicole J. and Li, Hairi and McGurk, Michael P. and Nguyen, Thai B. and Palden, Tsultrim and Rabano, Ines and Sathe, Shashank and Stanton, Rebecca and Su, Amanda and Wang, Ruth and Yee, Brian A. and Zhou, Bing and Louie, Ashley L. and Aigner, Stefan and Fu, Xiang-Dong and L{\'e}cuyer, Eric and Burge, Christopher B. and Graveley, Brenton R. and Yeo, Gene W.},
-  year = 2020,
-  month = jul,
-  journal = {Nature},
-  volume = {583},
-  number = {7818},
-  pages = {711--719},
-  publisher = {Nature Publishing Group},
-  issn = {1476-4687},
-  doi = {10.1038/s41586-020-2077-3},
-  urldate = {2025-11-01},
-  abstract = {Many proteins regulate the expression of genes by binding to specific regions encoded in the genome1. Here we introduce a new data set of RNA elements in the human genome that are recognized by RNA-binding proteins (RBPs), generated as part of the Encyclopedia of DNA Elements (ENCODE) project phase III. This class of regulatory elements functions only when transcribed into RNA, as they serve as the binding sites for RBPs that control post-transcriptional processes such as splicing, cleavage and polyadenylation, and the editing, localization, stability and translation of mRNAs. We describe the mapping and characterization of RNA elements recognized by a large collection of human RBPs in K562 and HepG2 cells. Integrative analyses using five assays identify RBP binding sites on RNA and chromatin in vivo, the in vitro binding preferences of RBPs, the function of RBP binding sites and the subcellular localization of RBPs, producing 1,223 replicated data sets for 356 RBPs. We describe the spectrum of RBP binding throughout the transcriptome and the connections between these interactions and various aspects of RNA biology, including RNA stability, splicing regulation and RNA localization. These data expand the catalogue of functional elements encoded in the human genome by the addition of a large set of elements that function at the RNA level by interacting with RBPs.},
-  copyright = {2020 The Author(s)},
-  langid = {english},
-  keywords = {Alternative splicing,Transcriptomics},
-  file = {/home/louis/Zotero/storage/PKICN3UW/Van Nostrand et al. - 2020 - A large-scale binding and functional map of human RNA-binding proteins.pdf}
 }

@@ -21,7 +21,7 @@
 \usepackage[scaled]{helvet}
 % \usepackage{helvet}
 
-\usepackage{palatino}
+% \usepackage{palatino}
 % \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 \newcommand{\sprime}{\ensuremath{^\prime}}
@@ -154,7 +154,7 @@ Levofloxacin is an FDA-approved oral antibiotic that functions as an inhibitor o
 \begin{figure}
     \begin{center}
     \includegraphics[width=0.8\linewidth]{figures/workflow-virtual-expt-5putr-screen.pdf}
-    \caption{An illustration of the workflow we propose. Using the literature, RNA-elements and their protein binding partners in the \fputr s of RNAs are identified. These are modeled using computational tools in designed fragment RNA that serves as a modular scaffold for the RNA element of interest. These models are validated using rapid experimental means such as NMR, and also simulated with molecular dynamics to develop a rough picture of the ensemble of the target.  Using in-silico pocket finding tools and ensemble virtual screening with a library of approved molecules, we prioritize candidates to validate experimentally. Candidates whose biophysical interactions and infectivity assays indicate functionality become antiviral treatment options off-label, because of their approved nature.}\label{fig:workflow}
+    \caption{An illustration of the workflow we propose. Using the literature, RNA-elements and their protein binding partners in the \fputr s of disease relevant mRNAs are identified. The RNA elements are grafted into a designed fragment using computational tools. These models are validated using rapid experimental means such as NMR, and simulated with molecular dynamics to model the ensemble of the target. Using pocket finding tools and ensemble virtual screening with a library of approved molecules, we prioritize SMs to validate experimentally. SMs that show biophysical and infectivity assay activity become antiviral treatment options because of their approved nature.}\label{fig:workflow}
     \end{center}
 \end{figure}
 
@@ -162,7 +162,8 @@ Considering the \fputr of EV71 as a representative example, we can identify XXX 
 
 We can build models of these complexes using AlphaFold3, and potentially other tools that combine proteins and RNAs (VAS). 
 
-Using the structural fragment strategy outlined in figure 2, we constrain the AlphaFold3 prediction to the most probable protein-RNA interface.  This targeted approach increases the likelihood that the predicted complex captures the native binding mode, as most RNA binding proteins recognize sequence-specific motifs presented within single-stranded regions of structured RNAs (REF). By isolating the relevant RNA element  as a modular bulge fragment, we focus the interaction surface, while the RBP engages the target through its canonical B-sheet interface.   In parallel, we can prepare isotopically enriched protein and RNA to validate the  binding mode (Fig 2). The modular design of the RNA structural fragment enables selective isotopic labeling of nucleotides within the bulge against a background of unlabeled nucleobases engaged in Watson-Crick base-pairs (in this case, GC pairs). This feature allows clear detection of ligand induced chemical shift perturbations without requiring full chemical shift assignments. From a screening perspective, this approach allows facile and efficient detection of ligand-induced changes of the NMR signals arising from the bulge loop environment.
+Using the structural fragment strategy outlined in figure 2, we constrain the AlphaFold3 prediction to the most probable protein-RNA interface.  This targeted approach increases the likelihood that the predicted complex captures the native binding mode, as most RNA binding proteins recognize sequence-specific motifs presented within single-stranded regions of structured RNAs \citep{patel2000,hentze2012,yeo2020}. By isolating the relevant RNA element  as a modular bulge fragment, we focus the interaction surface, while the RBP engages the target through its canonical B-sheet interface.   In parallel, we can prepare isotopically enriched protein and RNA to validate the  binding mode (Fig 2). The modular design of the RNA structural fragment enables selective isotopic labeling of nucleotides within the bulge against a background of unlabeled nucleobases engaged in Watson-Crick base-pairs (in this case, GC pairs). This feature allows clear detection of ligand induced chemical shift perturbations without requiring full chemical shift assignments. From a screening perspective, this approach allows facile and efficient detection of ligand-induced changes of the NMR signals arising from the bulge loop environment.
+
 
   
 
@@ -214,7 +215,7 @@ The datasets [GENERATED/ANALYZED] for this study can be found in the [NAME OF RE
 
 \bibliographystyle{Frontiers-Harvard} %  Many Frontiers journals use the Harvard referencing system (Author-date), to find the style and resources for the journal you are submitting to: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal. For Humanities and Social Sciences articles please include page numbers in the in-text citations 
 %\bibliographystyle{Frontiers-Vancouver} % Many Frontiers journals use the numbered referencing system, to find the style and resources for the journal you are submitting to: https://zendesk.frontiersin.org/hc/en-us/articles/360017860337-Frontiers-Reference-Styles-by-Journal
-\bibliography{repurposing-vs-5p-utr}
+\bibliography{repurposing-vs-5p-utr,repurposing-vs-5p-utr-lgs}
 
 %%% Make sure to upload the bib file along with the tex file and PDF
 %%% Please see the test.bib file for some examples of references
