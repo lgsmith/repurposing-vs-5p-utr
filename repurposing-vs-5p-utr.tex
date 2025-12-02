@@ -115,17 +115,18 @@ Consistent with this, SM-RNA interaction databases such as R-BIND identify bulge
 Structural surveys further indicate that bulge loops constitute roughly 20-30\% of local secondary-structure motifs across cellular and viral RNAs, reflecting their prevalence in dynamic, ligand-accessible architectures \citep{patel2000}. 
 Collectively, these observations highlight bulge loops as privileged structural motifs for molecular recognition and as promising entry points for drug discovery targeting structured RNAs and RNP complexes.
 
-Integrating predictive and experimental structural data provides a powerful foundation for rational drug repurposing. 
-While working with approved chemical matter accelerates any regulatory process downstream of an identified binder, identifying binders against a desired target becomes challenging. 
-If the `library' is to be the set of approved molecules, the question becomes ``is the hit even in the library?'' 
-However, because of the multivalent and dynamic nature of \fputr s, those associated with disease are a target rich environment for modulators. 
-And because the disease condition materially elevates the abundance of these targets above that of cellular components, lower affinity molecules are viable, and may even be desirable, as therapies. 
-Finally, when it comes to transcription and translation performance, small deviations can alter the stoichiometry of disease-causing products, enough to perturb disease physiology \citep{butcher2012}.
 
 Structural ensembles generated through MD simulations initiated from AlphaFold3 models, and validated by NMR spectroscopy, can reveal transient binding pockets and allosteric surfaces that remain hidden in static structures. 
 These dynamic ensembles can be exploited to screen and prioritize approved small molecules whose physicochemical properties favor engagement with RNP interfaces. 
 Leveraging the vast chemical diversity of existing FDA approved pharmacophores accelerates the identification of modulators that stabilize or disrupt specific RNP conformations---enabling mechanism-guided repurposing that shortens development timelines and de-risks early discovery. 
 Ultimately, the convergence of AI-driven structure prediction, MD simulation, and biophysical experimentation establishes a tractable and scalable path toward targeting RNPs with small molecules.
+
+Integrating predictive and experimental structural data provides a powerful foundation for rational drug repurposing. 
+While working with approved chemical matter accelerates any regulatory process downstream of an identified binder, identifying binders against a desired target becomes challenging. 
+If the `library' is to be the set of approved molecules, the question becomes ``is the hit even in the library?'' 
+However, because of the multivalent and dynamic nature of \fputr s, those associated with disease are a target rich environment for modulators. 
+And because the disease condition materially elevates the abundance of these targets above that of cellular components, lower affinity molecules are viable, and may even be desirable, as therapies. 
+Finally, when it comes to transcription and translation performance, small deviations can alter the stoichiometry of disease-causing products, enough to perturb disease physiology \citep{butcher2012}.       
 
 Here, we advance a conceptual framework integrating structure prediction, molecular simulation, and experimental validation to evaluate the druggability of RNP complexes. We discuss this framework as applied to the \fputr\ of Enterovirus A-71 (EV-A71) as a representative example. 
 This region contains an internal ribosome entry site (IRES) that engages more than 20 host RBPs and a viral-derived small RNA to modulate translation. 
@@ -217,6 +218,10 @@ The first stem-loop (SLI) has been shown to be primarily responsible/implicated 
 The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal entry site and control viral protein production by modulating its interactions with various protein partners [Ref]. 
 In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors [Ref].
 Thus, by targeting specific RNP complexes, downstream aspects of the viral lifecycle that are related to a given RNP complex can be altered. 
+
+A significant barrier to discovering novel SMs with capacity to inhibit EV-A71 infection is a paucity of intact high-resolution structures of RNP complexes that regulate viral replication.   We hypothesize that generative sub-models of RNP complexes can be predicted using AF3 where the predicted structures possess features that recapitulate the binding interface.  The premise supporting our hypothesis is that most RBPs bind 
+
+AF3 models of smaller sub-RNP components that recapitulate initial poses of the binding interface, which can be further explored through MD simulations....
 
 We can build models of these complexes using AlphaFold3.
 For example we built three-dimensional structural models of protein-RNA complexes were made using AlphaFold 3 (AF3) \citep{jumper2024}.
