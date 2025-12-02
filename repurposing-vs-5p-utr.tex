@@ -103,7 +103,6 @@ Among cellular and viral RNA elements, 5\sprime\ untranslated regions (\fputr s)
 Their architectures are remarkably diverse, often folding into conserved secondary structures interspersed with bulges, junctions, and internal loops that serve as docking platforms for ribosomes, other RNA elements, regulatory proteins, and viral factors. 
 Furthermore, dysregulation of \fputr-mediated control is increasingly implicated in cancer, neurodegeneration, and viral pathogenesis, underscoring their functional importance \citep{hentze2012}.
 
-
 From a therapeutic standpoint, the modularity and structural plasticity of \fputr s make them compelling drug targets. 
 Small molecules that modulate specific RBP-RNA interfaces could reprogram translation with predictable outcomes. 
 Visualizing the conformational and RBP-interaction landscapes of \fputr s at atomic resolution may reveal cryptic regulatory pockets and broaden the spectrum of RNP assemblies accessible to rational SM design.
@@ -133,28 +132,34 @@ Perturbations that weaken these RBP-IRES interactions significantly reduce viral
 Multiple RNA-focused screens have identified small molecules that suppress EV-A71 replication, with DMA-135 emerging as a selective modulator of a key IRES-protein interface. 
 These observations underscore the potential for integrative structural and computational methodologies to pinpoint mechanistic vulnerabilities in viral RNA regulation and accelerate the rational repurposing of clinically relevant compounds for antiviral intervention.
 
-\section{Structured and conserved \fputr s are an underexploited attack surface for antiviral therapies}
+\section{Viral \fputr s are an attack surface for antiviral therapies}
 
 % Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing (Sudeshi).
 
 % RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
 The \fputr s of viral RNAs play a crucial role at different stages of a virus's lifecycle such as regulating translation, replication, and packaging.
 This is especially true if the RNA in question is the viral genome, as is the case for positive single-stranded RNA viruses.
-The secondary structures of many \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions.
+The secondary structures of many viral \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions.
 Different structured as well as unstructured regions within viral \fputr s harbors specific binding sites for cellular RNA-binding proteins (RBPs) and miRNAs that modulate viral replication.
 Since viral \fputr\ plays a pivotal role by recruiting and repurposing host RBPs to complement for their small genome sizes (2-30 kb) and limited coding capabilities, it becomes an attractive target for antiviral drugs that disrupt these vital host RBP-viral RNA interactions \citep{rouskin2024}.
 
+\subsection{EV71}\label{s:5p-targets}
+
 A well-known example is the EV-A71 \fputr, a control hub for EV-A71 genome replication and translation.
 It consists of the cloverleaf structure (SLI) and the IRES (SLII-VI) where cellular proteins also referred to as IRES trans-acting factors (ITAFs) bind to specific region(s) within the IRES to either positively or negatively regulate IRES-mediated translation while another set of cellular proteins bind to SLI to regulate viral genome replication.
-So far, more than 20 cellular RBPs have been identified to interact with EV-A71 \fputr\ to regulate viral replication \citep{tolbert2024b}. 
+So far, more than 20 cellular RBPs have been identified to interact with EV-A71 \fputr\ to regulate viral replication \citep{tolbert2024a}. 
 To date, SLII is the only well-characterized structure within the EV-A71 \fputr\ where specific binding sites of several of its ITAFs have been identified.
 RBPs hnRNP A1 and AUF1 are known to bind at the internal bulge of SLII to enhance and suppress IRES-mediated translation, respectively.
 This bulge has been successfully targeted by a small molecule antiviral DMA-135 that binds RNA and strengthens the host AUF1-viral SLII RNA interaction, thus shifting the SLII regulatory axis towards translation repression \citep{tolbert2020}.
-This provides as a proof of the capacity to selectively perturb specific host RBP-viral \fputr interactions using small molecule drugs.
+This demonstrates the potentially therapeutic effect perturbation of specific host RBP-viral \fputr\ interactions with SMs can have.
+
+\subsection{HIV}
 
 The HIV-1 \fputr\ is also critical for multiple steps in the viral life cycle, where it interacts with host factors to regulate multiple processes including viral genome transcription and splicing, reverse transcription, and genome packaging to form new virions.
 Hence, key regulatory elements within the \fputr\ such as the TAR stem-loop, primer binding site (PBS), dimerization initiation site (DIS), and packaging signal (\(\Psi\)) are attractive drug target sites for HIV-1 inhibition \citep{hu2024,roebuck1998,brakier-gingras2012}. 
 To date, antisense oligonucleotides (ASOs), small interfering RNAs (siRNAs) and RNA aptamers have been exploited as antiviral strategies to target HIV-1 \fputr, while there are no FDA-approved small molecule drugs \citep{kjems2007,berzal-herranz2014,mergia2009}. So far, several small molecule RNA ligands targeting the TAR hairpin have been identified as inhibitors of viral replication \citep{duca2019}. 
+
+\subsection{SARS-CoV-2}
 
 Because it is a positive strand RNA virus, the \fputr\ of SARS-CoV-2 also plays critical roles in viral genome replication and translation, though these are as yet more poorly understood.
 To date, there are no FDA-approved drugs targeting the \fputr\ of SARS-CoV-2.
@@ -176,8 +181,8 @@ Hence, there is promise in identifying modulators of these host RBP-viral RNA in
 % Enhanced specificity of RBP interactions can be achieved by cooperative binding of RNA recognition motifs (RRM) within RBPs to their cognate RNA binding sites \citep{Mackereth2011,Hennig2015,Duszczyk2022}. 
 Endogenous small molecules such as adenosine triphosphate (ATP), guanosine triphosphate (GTP), and S-adenosylmethionine (SAM) regulate various cellular processes such as RNA localization, translation, and mRNA processing via mediation of RBP-RNA interactions \citep{Miao2025}. 
 Non-endogenous small molecules have also emerged as an attractive tool for modulating RBP-RNA interactions. 
-In 2020, the splice modulator risdiplam was approved by the Food and Drug Administration (FDA), serving as the only non-ribosomal RNA-targeting FDA approved small molecule to date \citep{Mullard2020,Ratni2021,Ratni2018}. 
-Risdiplam stabilizes the interaction between U1 small nuclear ribonucleoprotein and survival motor neuron (SMN) mRNA, leading to replenished SMN2 protein levels for proper maintenance of motor neurons \citep{Ratni2021,Ratni2018}. 
+In 2020, the splice modulator risdiplam was approved by the Food and Drug Administration (FDA), serving as the only non-ribosomal RNA-targeting FDA approved small molecule to date \citep{Mullard2020,Ratni2018,Ratni2018}. 
+Risdiplam stabilizes the interaction between U1 small nuclear ribonucleoprotein and survival motor neuron (SMN) mRNA, leading to replenished SMN2 protein levels for proper maintenance of motor neurons \citep{Ratni2018,Ratni2021}. 
 Similarly, the amiloride DMA-135 stabilizes the RNP interaction between AUF1 and stem loop 2 of EV-A71 internal ribosomal entry site (IRES), thereby repressing cap-independent translation of important viral proteins \citep{Davila-Calderon2020,Davila-Calderon2024}. However, the expediency in this approach is tainted by the number of RNA-targeting small molecules that have been approved by the FDA.
  
 The dearth in RNA-targeting FDA-approved small molecules can partly be ascribed to the conformational heterogeneity of RNAs, as well as the relatively fewer RNA structures deposited in the Protein Data Bank (approximately 26 protein structures for every single RNA structure).
@@ -212,10 +217,10 @@ Taken together, however, these instances of SM and FDA approved molecules intera
 % Modeling of RNP complexes can be accomplished using tools such as Alphafold3, and for improved accuracy of RNP models, a fragment based approached can be implemented where minimal constructs of RNA elements are used during the modeling process to increase the likelihood of capturing native RNA-protein interfaces. 
 % Further optimization efforts can be made by running molecular dynamics simulations on AF3 outputs for conformational ensemble generation followed by docking, and experimental validation.
 
-Considering EV-A71 as a model system, the \fputr\ is predicted to fold into six individual stem-loops all of which have a different number of interacting protein partners that contribute to the overall regulation of the viral lifecycle. 
-The first stem-loop (SLI) has been shown to be primarily responsible/implicated in viral replication [Ref]. 
-The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal entry site and control viral protein production by modulating its interactions with various protein partners [Ref]. 
-In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors [Ref].
+Taking EV-A71 as a model system, the \fputr\ is predicted to fold into six individual stem-loops, all of which have multiple interacting protein partners that contribute to the overall regulation of the viral lifecycle.
+As discussed in Section \ref{s:5p-targets}, the first stem-loop (SLI) has been shown to be primarily responsible/implicated in viral replication \citep{shih2009,shih2014,tolbert2024a}. 
+The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal entry site and control viral protein production by modulating its interactions with various protein partners \citep{sarnow2003,tolbert2017,Davila-Calderon2020,tolbert2024a}. 
+In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors \citep{shih2009,Davila-Calderon2020}.
 Thus, by targeting specific RNP complexes, downstream aspects of the viral lifecycle that are related to a given RNP complex can be altered. 
 
 We can build models of these complexes using AlphaFold3.
@@ -233,9 +238,9 @@ The modular design of the RNA structural fragment enables selective isotopic lab
 This feature allows clear detection of ligand induced chemical shift perturbations without requiring full chemical shift assignments. 
 From a screening perspective, this approach allows facile and efficient detection of ligand-induced changes of the NMR signals arising from the bulge loop environment.
 
-To perform a virtual screen, we'd first run simulations of these complexes looking for pockets.
-Although simulations are a medium-low throughput technique, they can still help validate AF3 models by permitting physics to dictate whether conformations in the initial model are maintained.
-Using either adaptive sampling, or some other exploratory enhanced sampling such as Gaussian-accelerated Molecular Dynamics (MD), provides a rough sketch of the ensemble of the complex on a 'several weeks' timeline for common compute resources \citep{defabritiis2016,miao2021}.
+To perform a virtual screen, we'd first run Molecular Dynamics simulations (MD) of these complexes looking for pockets.
+Although MD is a medium-low throughput technique, it can help validate AF3 models since it is more physically grounded; consistency in key contacts across the model and simulated ensemble lend credibility to both \citep{hennig2025,vlamos2025,gsponer2025}.
+Using either adaptive sampling, or some other exploratory enhanced sampling such as Gaussian-accelerated MD, provides a rough sketch of the ensemble of the complex on a 'several weeks' timeline for common compute resources \citep{defabritiis2016,miao2021}.
 Shorter timescale simulations also permit the detection of cryptic pockets, which can often appear within hundreds of nanoseconds of replicate simulation \citep{bowman2023}.
 For identifying pockets, ligsite or f-pocket can be used, as well as the RNA specific update proposed by \citet{weeks2025} \citep{barnickel1997,tuffery2009}.
 
