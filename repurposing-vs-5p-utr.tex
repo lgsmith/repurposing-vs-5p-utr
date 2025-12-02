@@ -219,16 +219,9 @@ The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal
 In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors [Ref].
 Thus, by targeting specific RNP complexes, downstream aspects of the viral lifecycle that are related to a given RNP complex can be altered. 
 
-A significant barrier to discovering novel SMs with capacity to inhibit EV-A71 infection is a paucity of intact high-resolution structures of RNP complexes that regulate viral replication.   We hypothesize that generative sub-models of RNP complexes can be predicted using AF3 where the predicted structures possess features that recapitulate the binding interface.  The premise supporting our hypothesis is that most RBPs bind 
+A significant barrier to discovering novel SMs with capacity to inhibit EV-A71 infection is a paucity of intact high-resolution structures of RNP complexes that regulate viral replication.   We hypothesize that generative sub-models of RNP complexes can be predicted using AF3 where the predicted structures possess features that recapitulate the binding interface.  The premise supporting our hypothesis is that most RBPs bind short degenerate sequence motifs located within unpaired regions of RNA structure.  The PDB contains   Therefore, we posit that by focusing 
 
 AF3 models of smaller sub-RNP components that recapitulate initial poses of the binding interface, which can be further explored through MD simulations....
-
-We can build models of these complexes using AlphaFold3.
-For example we built three-dimensional structural models of protein-RNA complexes were made using AlphaFold 3 (AF3) \citep{jumper2024}.
-As a test, we tried input sequences that included the RRM1 domain of AUF1 and the RRM12 domain of UP1, and a minimal RNA nucleotide sequences that mimics the fold of the SL2 RNA bulge.  
-The generated models were evaluated based on AF3's self-reported confidence metrics, primarily the interface predicted TM-score (ipTM) and the overall predicted TM-score (pTM). 
-For the UP1-minimal RNA fragment, we obtained a selected model with an ipTM of 0.66 and pTM of 0.81; and AUF RRM1 with the SL2 GAGA RNA fragment, resulting in a selected model with an ipTM of 0.66 and pTM of 0.71, suggesting our models have tolerable confidence levels overall.
-A local confidence analysis using the predicted local distance difference test (pLDDT) score for both models indicated 'Very high' confidence (pLDDT > 90) for core protein domains, while RNA molecules and flexible protein loops exhibited more variable confidence, ranging from 'Confident' (70 < pLDDT < 90) to 'Low' (50 < pLDDT < 70).
 
 Using the structural fragment strategy outlined in Fig. \ref{fig:workflow}, we constrain the AF3 prediction to the most probable protein-RNA interface.  
 This targeted approach increases the likelihood that the predicted complex captures the native binding mode, as most RNA binding proteins recognize sequence-specific motifs presented within single-stranded regions of structured RNAs \citep{patel2000,hentze2012,yeo2020}. 
@@ -237,6 +230,16 @@ In parallel, we can prepare isotopically enriched protein and RNA to validate th
 The modular design of the RNA structural fragment enables selective isotopic labeling of nucleotides within the bulge against a background of unlabeled nucleobases engaged in Watson-Crick base-pairs (in this case, GC pairs). 
 This feature allows clear detection of ligand induced chemical shift perturbations without requiring full chemical shift assignments. 
 From a screening perspective, this approach allows facile and efficient detection of ligand-induced changes of the NMR signals arising from the bulge loop environment.
+
+
+We can build models of these complexes using AlphaFold3.
+For example we built three-dimensional structural models of protein-RNA complexes were made using AlphaFold 3 (AF3) \citep{jumper2024}.
+As a test, we tried input sequences that included the RRM1 domain of AUF1 and the RRM12 domain of UP1, and a minimal RNA nucleotide sequences that mimics the fold of the SL2 RNA bulge.  
+The generated models were evaluated based on AF3's self-reported confidence metrics, primarily the interface predicted TM-score (ipTM) and the overall predicted TM-score (pTM). 
+For the UP1-minimal RNA fragment, we obtained a selected model with an ipTM of 0.66 and pTM of 0.81; and AUF RRM1 with the SL2 GAGA RNA fragment, resulting in a selected model with an ipTM of 0.66 and pTM of 0.71, suggesting our models have tolerable confidence levels overall.
+A local confidence analysis using the predicted local distance difference test (pLDDT) score for both models indicated 'Very high' confidence (pLDDT > 90) for core protein domains, while RNA molecules and flexible protein loops exhibited more variable confidence, ranging from 'Confident' (70 < pLDDT < 90) to 'Low' (50 < pLDDT < 70).
+
+
 
 To perform a virtual screen, we'd first run simulations of these complexes looking for pockets.
 Although simulations are a medium-low throughput technique, they can still help validate AF3 models by permitting physics to dictate whether conformations in the initial model are maintained.
