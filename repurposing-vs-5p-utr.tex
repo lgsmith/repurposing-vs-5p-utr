@@ -133,15 +133,45 @@ Perturbations that weaken these RBP-IRES interactions significantly reduce viral
 Multiple RNA-focused screens have identified small molecules that suppress EV-A71 replication, with DMA-135 emerging as a selective modulator of a key IRES-protein interface. 
 These observations underscore the potential for integrative structural and computational methodologies to pinpoint mechanistic vulnerabilities in viral RNA regulation and accelerate the rational repurposing of clinically relevant compounds for antiviral intervention.
 
-\section{Structured and conserved \fputr are an underexploited attack surface for many diseases}
+\section{Structured and conserved \fputr s are an underexploited attack surface for antiviral therapies}
 
-Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing (Sudeshi).
+% Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing (Sudeshi).
 
-RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
+% RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
+The \fputr s of viral RNAs play a crucial role at different stages of a virus's lifecycle such as regulating translation, replication, and packaging.
+This is especially true if the RNA in question is the viral genome, as is the case for positive single-stranded RNA viruses.
+The secondary structures of many \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions.
+Different structured as well as unstructured regions within viral \fputr s harbors specific binding sites for cellular RNA-binding proteins (RBPs) and miRNAs that modulate viral replication.
+Since viral \fputr\ plays a pivotal role by recruiting and repurposing host RBPs to complement for their small genome sizes (2-30 kb) and limited coding capabilities, it becomes an attractive target for antiviral drugs that disrupt these vital host RBP-viral RNA interactions \citep{rouskin2024}.
+
+A well-known example is the EV-A71 \fputr, a control hub for EV-A71 genome replication and translation.
+It consists of the cloverleaf structure (SLI) and the IRES (SLII-VI) where cellular proteins also referred to as IRES trans-acting factors (ITAFs) bind to specific region(s) within the IRES to either positively or negatively regulate IRES-mediated translation while another set of cellular proteins bind to SLI to regulate viral genome replication.
+So far, more than 20 cellular RBPs have been identified to interact with EV-A71 \fputr\ to regulate viral replication \citep{tolbert2024b}. 
+To date, SLII is the only well-characterized structure within the EV-A71 \fputr\ where specific binding sites of several of its ITAFs have been identified.
+RBPs hnRNP A1 and AUF1 are known to bind at the internal bulge of SLII to enhance and suppress IRES-mediated translation, respectively.
+This bulge has been successfully targeted by a small molecule antiviral DMA-135 that binds RNA and strengthens the host AUF1-viral SLII RNA interaction, thus shifting the SLII regulatory axis towards translation repression \citep{tolbert2020}.
+This provides as a proof of the capacity to selectively perturb specific host RBP-viral \fputr interactions using small molecule drugs.
+
+The HIV-1 \fputr\ is also critical for multiple steps in the viral life cycle, where it interacts with host factors to regulate multiple processes including viral genome transcription and splicing, reverse transcription, and genome packaging to form new virions.
+Hence, key regulatory elements within the \fputr\ such as the TAR stem-loop, primer binding site (PBS), dimerization initiation site (DIS), and packaging signal (\(\Psi\)) are attractive drug target sites for HIV-1 inhibition \citep{hu2024,roebuck1998,brakier-gingras2012}. 
+To date, antisense oligonucleotides (ASOs), small interfering RNAs (siRNAs) and RNA aptamers have been exploited as antiviral strategies to target HIV-1 \fputr, while there are no FDA-approved small molecule drugs \citep{kjems2007,berzal-herranz2014,mergia2009}. So far, several small molecule RNA ligands targeting the TAR hairpin have been identified as inhibitors of viral replication \citep{duca2019}. 
+
+Because it is a positive strand RNA virus, the \fputr\ of SARS-CoV-2 also plays critical roles in viral genome replication and translation, though these are as yet more poorly understood.
+To date, there are no FDA-approved drugs targeting the \fputr\ of SARS-CoV-2.
+However, some ASOs and SMs that bind to specific secondary structures within it demonstrate antiviral properties. 
+For example, ASOs that bind to the SL1 [9] and SM amiloride derivatives that bind to SL4, SL5a, and SL6 [10] suppress SARS-CoV-2 replication \citep{wang2021,hargrove2021}. 
+There is also some evidence describing host RBP-viral RNA interactions based on conserved and \fputr\ structural elements. For example, \citet{pei2023} demonstrated that RBM24 binds within SL4 stem-loop in the SARS-CoV-2 5'-UTR to suppress SARS-CoV-2 replication.
+Using a neural net trained to predict RBP binding sites from secondary structures, \citet{zhang2021a} predicted several host RBPs such as IGF2BP1, hnRNP A1, hnRNPK, and TIA1, to bind different SLs in the SARS-CoV-2 \fputr.
+Hence, there is promise in identifying modulators of these host RBP-viral RNA interactions toward successful antiviral therapies.
 
 \section{There is evidence that FDA approved molecules bind to RNAs and modulate RNA-protein complexes}
 
-The activity of RNA is tightly regulated by RNA binding proteins (RBPs) through sequence and/or structural recognition \citep{Gerstberger2014,Dominguez2018}. Dysregulation or off-target binding of RBPs is associated with neurodegenerative diseases \citep{Bryce-Smith2025,Zeng2025}, cancer \citep{Bell2013}, and developmental disorders \citep{Darnell2011}. Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by an abnormal accumulation of fused in sarcoma (FUS) protein in the cytoplasm. To minimize the accumulation of cytoplasmic FUS, existing cellular FUS proteins enagage pre-mRNA, producing a feedback loop in the presence of excess FUS protein, thus halting the expression of new FUS proteins \citep{Ayala2011}. Consequently, the disruption of the FUS-pre-messenger RNA (mRNA) interaction exacerbates ALS progression. Another neurodegenerative disease, frontotemporal dementia (FTD) is characterized by the depletion of the mRNA splicing protein, TDP-43, in the nucleus of neurons. Recent studies have described an alternate functional role for TDP-43; TDP-43 interacts with GU rich repeat sequences in mRNAs to modulate cleavage and alternative polyadenylation (APA) \citep{Bryce-Smith2025,Zeng2025}. Improper regulation of APA initiates a cascade of events that results in the loss of functional proteins for axonal regeneration/repair \citep{Melamed2019}. These examples highlight the integral role of proper ribonucleoprotein (RNP) regulation in the maintenance of optimal cellular function.
+The activity of RNA is tightly regulated by RNA binding proteins (RBPs) through sequence and/or structural recognition \citep{Gerstberger2014,Dominguez2018}. Dysregulation or off-target binding of RBPs is associated with neurodegenerative diseases \citep{Bryce-Smith2025,Zeng2025}, cancer \citep{Bell2013}, and developmental disorders \citep{Darnell2011}. 
+Amyotrophic lateral sclerosis (ALS) is a neurodegenerative disease characterized by an abnormal accumulation of fused in sarcoma (FUS) protein in the cytoplasm. 
+To minimize the accumulation of cytoplasmic FUS, existing cellular FUS proteins enagage pre-mRNA, producing a feedback loop in the presence of excess FUS protein, thus halting the expression of new FUS proteins \citep{Ayala2011}. 
+Consequently, the disruption of the FUS-pre-messenger RNA (mRNA) interaction exacerbates ALS progression. Another neurodegenerative disease, frontotemporal dementia (FTD) is characterized by the depletion of the mRNA splicing protein, TDP-43, in the nucleus of neurons. 
+Recent studies have described an alternate functional role for TDP-43; TDP-43 interacts with GU rich repeat sequences in mRNAs to modulate cleavage and alternative polyadenylation (APA) \citep{Bryce-Smith2025,Zeng2025}. 
+Improper regulation of APA initiates a cascade of events that results in the loss of functional proteins for axonal regeneration/repair \citep{Melamed2019}. These examples highlight the integral role of proper ribonucleoprotein (RNP) regulation in the maintenance of optimal cellular function.
 
 Enhanced specificity of RBP interactions can be achieved by cooperative binding of RNA recognition motifs (RRM) within RBPs to their cognate RNA binding sites \citep{Mackereth2011,Hennig2015,Duszczyk2022}. 
 In addition, endogenous small molecules such as adenosine triphosphate (ATP), guanosine triphosphate (GTP), and S-adenosylmethionine (SAM) regulate various cellular processes such as RNA localization, translation, and mRNA processing via mediation of RBP-RNA interactions \citep{Miao2025}. 
