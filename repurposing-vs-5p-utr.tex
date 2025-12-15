@@ -34,17 +34,19 @@
 
 
 \def\keyFont{\fontsize{8}{11}\helveticabold }
-\def\firstAuthorLast{Sample {et~al.}} %use et al only if is more than 1 author
-\def\Authors{First Author\,$^{1,*}$, Co-Author\,$^{2}$ and Co-Author\,$^{1,2}$}
+\def\firstAuthorLast{Smith {et~al.}} %use et al only if is more than 1 author
+\def\Authors{Louis G. Smith\,$^{1,{\dag}}$, \textbf{Solomon Attionu}\,$^{1,\dag}$, \textbf{Sudeshi M. Abedeera}\,$^{1}$, \textbf{Barrington Henry}\,$^{1}$, \textbf{Srinivasa Penumutchu}\,$^{1,2}$ and \textbf{Blanton S. Tolbert}\,$^{1,2,*}$}
 % Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
 % If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list.
-\def\Address{$^{1}$Laboratory X, Institute X, Department X, Organization X, City X , State XX (only USA, Canada and Australia), Country X \\
-$^{2}$Laboratory X, Institute X, Department X, Organization X, City X , State XX (only USA, Canada and Australia), Country X  }
+\def\Address{$^{1}$Stellar-Chance Laboratories, Institute for RNA Innovation, Department of Biochemistry \& Biophysics, University of Pennsylvania, Philadelphia, PA 19104, USA \\
+$^{2}$Howard Hughes Medical Institute, Chevy Chase, MD 20815, USA \\
+$^{\dag} These authors contributed equally to this work.}
+%$^{2}$Laboratory X, Institute X, Department X, Organization X, City X , State XX (only USA, Canada and Australia), Country X  }
 % The Corresponding Author should be marked with an asterisk
 % Provide the exact contact address (this time including street name and city zip code) and email of the corresponding author
-\def\corrAuthor{Corresponding Author}
+\def\corrAuthor{Blanton S. Tolbert}
 
-\def\corrEmail{email@uni.edu}
+\def\corrEmail{blanton.tolbert@pennmedicine.upenn.edu}
 
 \begin{document}
 \onecolumn
@@ -67,17 +69,17 @@ $^{2}$Laboratory X, Institute X, Department X, Organization X, City X , State XX
 
 %%% Leave the Abstract empty if your article does not require one, please see the Summary Table for full details.
 \section{}
-RNA-protein (RNP) complexes regulate nearly every stage of gene expression and play central roles in human disease and viral infection. Despite decades of research, few small molecules have been shown to modulate RNP assemblies with mechanistic understanding. This Perspective argues that the major obstacle is the difficulty of identifying functionally and structurally characterized RNP interfaces within highly dynamic regulatory networks. We propose an integrative discovery framework that combines structure prediction, molecular dynamic simulations, virtual docking, and biophysical validation to enable rational repurposing of FDA approved small molecules.   By focusing on regulatory 5' untranslated regions (5'UTRs) and recurring structural motifs such as bulge loops, we illustrate how minimal RNP constructs and ensemble-based clustering provide a viable path toward targeting functionally characterized RNP complexes. Viral 5'UTRs are presented as representative systems that illustrate how this workflow can reveal molecular vulnerabilities and likely accelerate therapeutic discovery beyond current approaches.
+RNA-protein (RNP) complexes regulate nearly every stage of gene expression and play central roles in human disease and viral infection. Despite decades of research, few small molecules have been shown to modulate RNP assemblies with mechanistic understanding. In this Perspective, we argue that the major obstacle is the difficulty of identifying functionally and structurally characterized RNP interfaces within highly dynamic regulatory networks. We propose an integrative discovery framework that combines structure prediction, molecular dynamic simulations, virtual docking, and biophysical validation to enable rational repurposing of FDA approved small molecules. By focusing on regulatory 5' untranslated regions (\fputr s) and recurring structural motifs such as bulge loops, we illustrate how minimal RNP constructs and ensemble-based clustering provide a viable path toward targeting functionally characterized RNP complexes. Viral \fputr s are presented as representative systems that illustrate how this workflow can reveal molecular vulnerabilities and likely accelerate therapeutic discovery beyond current approaches.
 
 
 \tiny
- \keyFont{ \section{Keywords:} keyword, keyword, keyword, keyword, keyword, keyword, keyword, keyword} %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
+ \keyFont{ \section{Keywords:} Repurposing, RNA-protein, RNA-small-molecule, Virus, IRES, \fputr, virtual screen, Alpha Fold 3} %All article types: you may provide up to 8 keywords; at least 5 are mandatory.
 \end{abstract}
 
 \section{Introduction}
 Small-molecule (SM) targeting of RNA–protein complexes demands an infusion of innovation to accelerate the discovery of new modalities that both illuminate biological mechanisms and hold therapeutic promise. RNA–protein (RNP) complexes orchestrate essential steps in gene expression under both normal physiological and pathological conditions.  Yet despite decades of research and substantial  investment, the repertoire of SM modulators of RNPs remains limited.  This disparity in part reflects the persistent challenges in identifying RNP interfaces that are functionally relevant, structurally characterized, and amenable to SM intervention. 
 
-Bridging this discovery gap  requires complementary strategies that operate in parallel with sequencing-based approaches that map RNA structure, RNA-binding protein (RBP) interactions, and SM binding sites across the transcriptome.  A majority of expressed human transcripts - estimated at over 50\% - exhibit measurable RBP occupancy \textit{in vivo}, as demonstrated by transcriptome-wide CLIP and RNA interactome capture studies \citep{yeo2020}.  For viruses, the prevalence of RBP-RNA interactions are predicted to be even higher, as both viral and cellular proteins engage viral RNA genomes at nearly every stage of the replication cycle \citep{kim2021,routh2022}. This pervasive and dynamic binding landscape complicates the identification of discrete, druggable RNP interfaces, particularly when interactions are transient, often multivalent, and embedded within larger regulatory networks.
+Bridging this discovery gap  requires complementary strategies that operate in parallel with sequencing-based approaches that map RNA structure, RNA-binding protein (RBP) interactions, and SM binding sites across the transcriptome.  A majority of expressed human transcripts - estimated at over 50\% - exhibit measurable RBP occupancy \textit{in vivo}, as demonstrated by transcriptome-wide CLIP and RNA interactome capture studies \citep{yeo2020}.  For viruses, the prevalence of RBP-RNA interactions are predicted to be even higher, as both viral and cellular proteins engage viral RNA genomes at nearly every stage of the replication cycle \citep{kim2021a,routh2022}. This pervasive and dynamic binding landscape complicates the identification of discrete, druggable RNP interfaces, particularly when interactions are transient, often multivalent, and embedded within larger regulatory networks.
 
 To overcome these challenges, RNP discovery efforts must shift from attempting to screen high-resolution structures of intact assemblies towards focusing on minimal structural fragments that faithfully recapitulate local RNP binding interfaces. Recent advances - exemplified by AlphaFold3 (AF3) - enable modeling of RNP complexes within broader RNA tertiary architectures,  yielding predicted binding interfaces that incorporate stereochemical features imposed by native RNA context and that are often absent from experimental structures of short RNA fragments focused primarily on sequence-specific recognition. When complemented by molecular dynamic  (MD) simulations and biophysical interrogation, these predicted complexes provide a robust foundation for generating dynamic RNP ensembles suitable for virtual  screening.   Together, this hybrid framework links predictive modeling with empirical observation, yielding an experimentally anchored view of RNP structure that captures the transient and allosteric behaviors most relevant to function.
 
@@ -100,7 +102,7 @@ Within these regulatory regions, bulge loops emerge as recurrent and functionall
 
 Surveys of experimentally determined RNA structures indicate that bulges and internal loops together constitute a substantial fraction (about 20-30\%) of local non-canonical structural motifs. 
 Large-scale annotation efforts based on curated RNA structures, including bpRNA, consistently identify bulges and internal loops as among the most prevalent non-WC elements across structured RNAs \citep{hendrix2018}.
-In viral genomes, where compact coding constraints favor conserved multifunctional RNA elements, bulges are particularly enriched with UTRs and internal ribosome entry sites (IRES), where they functionas adaptable platforms for hist and viral factor recruitment (Nat Rev Mol Cell Biol 19, 158–174 (2018). https://doi.org/10.1038/nrm.2017.103).
+In viral genomes, where compact coding constraints favor conserved multifunctional RNA elements, bulges are particularly enriched with UTRs and internal ribosome entry sites (IRES), where they function as adaptable platforms for hist and viral factor recruitment \citep{barna2018}.
 
 Consistent with this structural prevalence, curated RNA-ligand datasets reveal that bioactive SMs disproportionately engage RNAs containing bulges, internal loops, and junctions rather than fully base-paired helices.  \citep{hargrove2022}. These motifs present unique stereochemical environments characterized by exposed bases, backbone flexibility, and transient pocket formation, making them attractive targets for SM recognition and RNP modulation.
 
@@ -116,11 +118,11 @@ These observations underscore the potential for integrative structural and compu
 % Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing (Sudeshi).
 
 % RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
-The \fputr s of viral RNAs play a crucial role at different stages of a virus's lifecycle such as regulating translation, replication, and packaging.
+The \fputr s of viral RNAs play a crucial role at different stages of a virus's life cycle such as regulating translation, replication, and packaging.
 This is especially true if the RNA in question is the viral genome, as is the case for positive single-stranded RNA viruses.
 The secondary structures of many viral \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions.
 Different structured as well as unstructured regions within viral \fputr s harbor specific binding sites for cellular RNA-binding proteins (RBPs) and miRNAs that modulate viral replication.
-Since viral \fputr\ plays a pivotal role by recruiting and repurposing host RBPs to complement for their small genome sizes (2-30 kb) and limited coding capabilities, it becomes an attractive target for antiviral drugs that disrupt these vital host RBP-viral RNA interactions \citep{rouskin2024}.
+Since viral \fputr s play a pivotal role by recruiting and re-purposing host RBPs to complement for their small genome sizes (2-30 kb) and limited coding capabilities, it becomes an attractive target for antiviral drugs that disrupt these vital host RBP-viral RNA interactions \citep{rouskin2024}.
 
 \subsection{EV-A71}\label{s:5p-targets}
 
@@ -198,10 +200,10 @@ Taken together, however, these instances of SM and FDA approved molecules intera
 % Further optimization efforts can be made by running molecular dynamics simulations on AF3 outputs for conformational ensemble generation followed by docking, and experimental validation.
 
 Taking EV-A71 as a model system, the \fputr\ is predicted to fold into six individual stem-loops, all of which have multiple interacting protein partners that contribute to the overall regulation of the viral lifecycle.
-As discussed in Section \ref{s:5p-targets}, the first stem-loop (SLI) has been shown to be primarily responsible/implicated in viral replication \citep{shih2009,shih2014,tolbert2024a}. 
+As discussed in Section \ref{s:5p-targets}, the first stem-loop (SLI) is critical to viral replication \citep{shih2009,shih2014,tolbert2024a}. 
 The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal entry site and control viral protein production by modulating its interactions with various protein partners \citep{sarnow2003,tolbert2017,Davila-Calderon2020,tolbert2024a}. 
 In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors \citep{shih2009,Davila-Calderon2020}.
-Thus, by targeting specific RNP complexes, downstream aspects of the viral lifecycle that are related to a given RNP complex can be altered. 
+Thus, by targeting specific RNP complexes, downstream aspects of the viral life cycle that are related to a given RNP complex can be altered. 
 
 A significant barrier to discovering novel SMs capable of inhibiting EV-A71 infection is the limited availability of experimentally determined, high-resolution structures of intact RNP complexes that regulate viral replication. 
 We hypothesize that AF3 can generate accurate sub-models of these RNP assemblies in which the predicted structures recapitulate the salient features of the  binding interface. 
