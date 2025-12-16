@@ -79,7 +79,7 @@ RNA-protein (RNP) complexes regulate nearly every stage of gene expression and p
 \section{Introduction}
 Small-molecule (SM) targeting of RNA–protein complexes demands an infusion of innovation to accelerate the discovery of new modalities that both illuminate biological mechanisms and hold therapeutic promise. 
 RNA–protein (RNP) complexes orchestrate essential steps in gene expression under both normal physiological and pathological conditions.
-Yet despite decades of research and substantial  investment, the repertoire of SM modulators of RNPs remains limited. 
+Yet despite decades of research and substantial  investment, the repertoire of SM modulators of RNA and RNPs remains limited \citep{petterson2024a}. 
 This disparity in part reflects the persistent challenges in identifying RNP interfaces that are functionally relevant, structurally characterized, and amenable to SM intervention. 
 
 Bridging this discovery gap requires complementary strategies that operate in parallel with sequencing-based approaches that map RNA structure, RNA-binding protein (RBP) interactions, and SM binding sites across the transcriptome.  
@@ -88,10 +88,11 @@ For viruses, the prevalence of RBP-RNA interactions are predicted to be even hig
 This pervasive and dynamic binding landscape complicates the identification of discrete, druggable RNP interfaces, particularly when interactions are transient, often multivalent, and embedded within larger regulatory networks.
 
 To overcome these challenges, RNP discovery efforts must shift from attempting to screen high-resolution structures of intact assemblies towards focusing on minimal structural fragments that faithfully recapitulate local RNP binding interfaces.
-Recent advances - exemplified by AlphaFold3 (AF3) - enable modeling of RNP complexes within broader RNA tertiary architectures,  yielding predicted binding interfaces that incorporate stereochemical features imposed by native RNA context and that are often absent from experimental structures of short RNA fragments focused primarily on sequence-specific recognition \citep{jumper2024}. When complemented by Molecular Dynamics  (MD) simulations and biophysical interrogation, these predicted complexes provide a robust foundation for generating dynamic RNP ensembles suitable for virtual  screening.
+Recent advances - exemplified by AlphaFold3 (AF3) - enable modeling of RNP complexes within broader RNA tertiary architectures,  yielding predicted binding interfaces that incorporate stereochemical features imposed by native RNA context and that are often absent from experimental structures of short RNA fragments focused primarily on sequence-specific recognition \citep{jumper2024}. 
+When complemented by Molecular Dynamics  (MD) simulations and biophysical interrogation, these predicted complexes provide a robust foundation for generating dynamic RNP ensembles suitable for virtual  screening.
 Together, this hybrid framework links predictive modeling with empirical observation, yielding an experimentally anchored view of RNP structure that captures the transient and allosteric behaviors most relevant to function.
 
-\begin{figure}
+\begin{figure}[t]
     \begin{center}
     \includegraphics[width=\linewidth]{figures/5p-utr-targets.pdf}
     \caption{The \fputr\ constitutes an attack surface replete with targets for SMs perturbing the translation process. Because RBPs are needed to modulate translation for the purposes of the viral life-cycle, any ligand perturbing their affinity for the RNA-element they interact with has potential for antiviral activity. An SM may do this by binding the RBP in an allosteric site (Target class 1), competing directly for the RNA-element with the RBP (Target class 2), perturbing modifying enzymes that act on the \fputr\ (Target class 3) or RBP (target class 4) or finally SMs that bind across the RNA-protein interface, pre-organizing it to prefer binding to one factor over another (Target class 5).}\label{fig:5p-utr-targets}
@@ -104,35 +105,35 @@ Dysregulation of \fputr-mediated control is increasingly implicated in cancer, n
 
 Among both cellular and viral RNAs, \fputr s are enriched in structural elements such as stem loops, junctions, internal loops, and bulges that serve as docking platforms for RBPs and other regulatory factors. 
 These features position \fputr s as natural focal points for identifying discrete, mechanistically interpretable RNP interfaces within otherwise complex transcript-wide interaction networks.
-Critically, the copy number of most viral \fputr s during infection rises dramatically as the virus replicates, make them some of the most abundant messages in the cell \citep{}.
+Critically, the abundance of most viral \fputr s during infection rises dramatically as the virus replicates, make them relevant binding partners to even modest affinity binders by mass action \citep{tanenbaum2020,castello2021,iselin2023,shih2025}.
 
 Within these regulatory regions, bulge loops emerge as recurrent and functionally significant RNA structural motifs.
 Local deviations from canonical helices expose unpaired nucleotides that frequently serve as recognition elements for RBPs and other ligands  \citep{patel2000}.
 The conformational plasticity of bulge loops enables diverse binding modes, allowing them to accommodate proteins, SMs, and other RNA elements with distinct stereochemical features.
-
 Surveys of experimentally determined RNA structures indicate that bulges and internal loops together constitute a substantial fraction (about 20-30\%) of local non-canonical structural motifs. 
 Large-scale annotation efforts based on curated RNA structures, including bpRNA, consistently identify bulges and internal loops as among the most prevalent non-WC elements across structured RNAs \citep{hendrix2018}.
 In viral genomes, where compact coding constraints favor conserved multifunctional RNA elements, bulges are particularly enriched with UTRs and internal ribosome entry sites (IRES), where they function as adaptable platforms for host and viral factor recruitment \citep{barna2018}.
 
 Consistent with this structural prevalence, curated RNA-ligand datasets reveal that bioactive SMs disproportionately engage RNAs containing bulges, internal loops, and junctions rather than fully base-paired helices
 \citep{hargrove2022}. 
-These motifs present unique stereochemical environments characterized by exposed bases, backbone flexibility, and transient pocket formation, making them attractive targets for SM recognition and RNP modulation.
+These motifs present unique stereochemical environments characterized by exposed bases, backbone flexibility, and transient pocket formation, making them attractive targets for SM recognition and RNP modulation (INSERT HERMANN REF HERE).
 
 Here, we advance a conceptual framework integrating structure prediction, molecular simulation, and experimental validation to evaluate the druggability of RNP complexes. 
-We discuss this framework as applied to the \fputr\ of Enterovirus A-71 (EV-A71) as a representative example.  
-This region contains an internal ribosome entry site (IRES) that engages more than 20 host RBPs and a viral-derived small RNA to modulate translation.  
-Perturbations that weaken these RBP-IRES interactions significantly reduce viral titers by compromising cap-independent translation.  
-Multiple RNA-focused screens have identified small molecules that suppress EV-A71 replication, with DMA-135 emerging as a selective modulator of a key IRES-protein interface \citep{tolbert2020,Davila-Calderon2024}. 
-These observations underscore the potential for integrative structural and computational methodologies to pinpoint mechanistic vulnerabilities in viral RNA regulation and accelerate the rational repurposing of clinically relevant compounds for antiviral intervention.
+We discuss this framework using the \fputr\ of Enterovirus A-71 (EV-A71) as a representative example.  
+% This region contains an internal ribosome entry site (IRES) that engages more than 20 host RBPs and a viral-derived small RNA to modulate translation.  
+% Perturbations that weaken these RBP-IRES interactions significantly reduce viral titers by compromising cap-independent translation.  
+% Multiple RNA-focused screens have identified small molecules that suppress EV-A71 replication, with DMA-135 emerging as a selective modulator of a key IRES-protein interface \citep{tolbert2020,Davila-Calderon2024}. 
+The perspective embodied in our proposed workflow integrates structural and computational methodologies to pinpoint mechanistic vulnerabilities in viral RNA regulation and accelerate the rational repurposing of clinically relevant compounds for antiviral intervention.
 
 \section{Viral \fputr s are an attack surface for antiviral therapies}
 
-% Conceptually, there are at least five types of interactions present in functional \fputr s that could be modulated by noncovalent binders---of these, targeting binders to the RNP interface or interaction sites on the RNA itself are most appealing (Sudeshi).
-
-% RNA and RNA-protein interaction sites also exist in viral RNAs, such as the \fputr of EV71.
-The \fputr s of viral RNAs play a crucial role at different stages of a virus's life cycle such as regulating translation, replication, and packaging.
-This is especially true if the RNA in question is the viral genome, as is the case for positive single-stranded RNA viruses.
-The secondary structures of many viral \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions.
+The \fputr s of viral RNAs play a crucial role at different stages of a virus's life cycle such as regulating translation, replication, and packaging (Front. Microbiol., 21 March 2018 Sec. Virology
+Volume 9 - 2018  https://doi.org/10.3389/fmicb.2018.00527}
+)
+This is especially true if the RNA in question is the viral genome, as is the case for positive single-stranded RNA viruses (\textit{Nat Rev Mol Cell Biol} 19, 158–174 (2018). https://doi.org/10.1038/nrm.2017.103)
+The secondary structures of many viral \fputr s are well conserved, folding into multiple stem-loops (SLs) and consist of critical regulatory elements like the internal ribosome entry site (IRES) for cap-independent translation, signals for genome replication, and specific sites recognized by viral proteins for packaging into new virions (Front. Microbiol., 03 January 2018
+Sec. Virology Volume 8 - 2017 https://doi.org/10.3389/fmicb.2017.02629}
+)
 Different structured as well as unstructured regions within viral \fputr s harbor specific binding sites for cellular RNA-binding proteins (RBPs) and miRNAs that modulate viral replication.
 Since viral \fputr s play a pivotal role by recruiting and re-purposing host RBPs to complement for their small genome sizes (2-30 kb) and limited coding capabilities, it becomes an attractive target for antiviral drugs that disrupt these vital host RBP-viral RNA interactions \citep{rouskin2024}.
 
@@ -159,7 +160,7 @@ To date, there are no FDA-approved drugs targeting the \fputr\ of SARS-CoV-2.
 However, some ASOs and SMs that bind to specific secondary structures within it demonstrate antiviral properties. 
 For example, ASOs that bind to the SL1 and SM amiloride derivatives that bind to SL4, SL5a, and SL6 suppress SARS-CoV-2 replication \citep{wang2021,hargrove2021}. 
 There is also some evidence describing host RBP-viral RNA interactions based on conserved and \fputr\ structural elements. For example, \citet{pei2023} demonstrated that RBM24 binds within SL4 stem-loop in the SARS-CoV-2 \fputr\ to suppress SARS-CoV-2 replication.
-Using a neural net trained to predict RBP binding sites from secondary structures, \citet{zhang2021} predicted several host RBPs such as IGF2BP1, hnRNP A1, hnRNPK, and TIA1, to bind different SLs in the SARS-CoV-2 \fputr.
+Using a neural net trained to predict RBP binding sites from secondary structures, \citet{zhang2021a} predicted several host RBPs such as IGF2BP1, hnRNP A1, hnRNPK, and TIA1, to bind different SLs in the SARS-CoV-2 \fputr.
 Hence, there is promise in identifying modulators of these host RBP-viral RNA interactions toward successful antiviral therapies.
 
 \section{There is evidence that FDA approved molecules bind to RNAs and modulate RNA-protein complexes}
@@ -174,7 +175,7 @@ Hence, there is promise in identifying modulators of these host RBP-viral RNA in
 % Enhanced specificity of RBP interactions can be achieved by cooperative binding of RNA recognition motifs (RRM) within RBPs to their cognate RNA binding sites \citep{Mackereth2011,Hennig2015,Duszczyk2022}. 
 Endogenous small molecules such as adenosine triphosphate (ATP), guanosine triphosphate (GTP), and S-adenosylmethionine (SAM) regulate various cellular processes such as RNA localization, translation, and mRNA processing via mediation of RBP-RNA interactions \citep{Miao2025}. 
 Non-endogenous small molecules have also emerged as an attractive tool for modulating RBP-RNA interactions. 
-In 2020, the splice modulator risdiplam was approved by the Food and Drug Administration (FDA), serving as the only non-ribosomal RNA-targeting FDA approved small molecule to date \citep{Mullard2020,Ratni2018,Ratni2018}. 
+In 2020, the splice modulator risdiplam was approved by the Food and Drug Administration (FDA), serving as the only non-ribosomal RNA-targeting FDA approved small molecule to date \citep{Mullard2020,Ratni2018,Ratni2021}. 
 Risdiplam stabilizes the interaction between U1 small nuclear ribonucleoprotein and survival motor neuron (SMN) mRNA, leading to replenished SMN2 protein levels for proper maintenance of motor neurons \citep{Ratni2018,Ratni2021}. 
 Similarly, the amiloride DMA-135 stabilizes the RNP interaction between AUF1 and stem loop 2 of EV-A71 internal ribosomal entry site (IRES), thereby repressing cap-independent translation of important viral proteins \citep{Davila-Calderon2020,Davila-Calderon2024}. 
 However, the expediency in this approach is reduced by the number of RNA-targeting small molecules that have been approved by the FDA.
@@ -195,9 +196,9 @@ Similarly, FDA-approved aminoglycosides such as paromomycin function by binding 
 The direct conclusion implies potential repurposing of Levofloxacin to target pathogens with G4 motifs that are pivotal to their life cycles. 
 Taken together, however, these instances of SM and FDA approved molecules interacting with RNP targets implies repurposing versus \fputr s as a more general strategy to combat viral pathogens.
 
-\section{There is a path to virtually screening many potential targets within a \fputr\ of interest}
+\section{Virtual screening of many potential targets within a \fputr}
 
-\begin{figure}
+\begin{figure}[h!]
     \begin{center}
     \includegraphics[width=0.8\linewidth]{figures/workflow-virtual-expt-5putr-screen.pdf}
     \caption{An illustration of the workflow we propose. Using the literature, RNA-elements and their protein binding partners in the \fputr s of disease relevant mRNAs are identified. The RNA elements are grafted into a designed fragment using computational tools. These models are validated using rapid experimental means such as NMR, and simulated with molecular dynamics to model the ensemble of the target. Using pocket finding tools and ensemble virtual screening with a library of approved molecules, we prioritize SMs to validate experimentally. SMs that show biophysical and infectivity assay activity become antiviral treatment options because of their approved nature.}\label{fig:workflow}
@@ -211,29 +212,31 @@ Taken together, however, these instances of SM and FDA approved molecules intera
 % Modeling of RNP complexes can be accomplished using tools such as Alphafold3, and for improved accuracy of RNP models, a fragment based approached can be implemented where minimal constructs of RNA elements are used during the modeling process to increase the likelihood of capturing native RNA-protein interfaces. 
 % Further optimization efforts can be made by running molecular dynamics simulations on AF3 outputs for conformational ensemble generation followed by docking, and experimental validation.
 
+
+A key obstacle to discovering small molecules that inhibit viral RNA metabolism is the limited availability of high-resolution structural insights into intact RNP complexes that orchestrate viral gene expression.
+
+We hypothesize that AF3 can generate accurate sub-models of these RNP assemblies in which the predicted structures recapitulate the salient features of the  binding interface. 
+These AF3-generated models can then be refined using enhanced sampling MD simulations to produce ensembles that explore alternative local binding geometries suitable for virtual screening.
+In this framework, AF3 prediction functions primarily as a source of structurally informed  starting coordinates that appropriately constrain the binding interface.
+
+This hypothesis is motivated by the well-established observation that many RBPs recognize short, often degenerate sequence motifs situated within unpaired or conformationally flexible regions of RNA secondary structure (https://doi.org/10.1016/j.molcel.2020.03.011). 
+Currently, the Protein Data Bank PDB contains thousands of distinct protein-RNA complexes. These structures offer a rich training set from which AF3 can learn fundamental determinants of interfacial protein-RNA recognition.
+
+Building on this rationale, we propose to simplify the modeling task by restricting AF3 predictions to the minimal RNP structural fragments necessary to recapitulate the local binding interface.  
+This strategy rests on the assumption that for SM virtual screening, the the local stereochemical environment primarily dictates docking accuracy and efficacy.  
+Although distal structural interactions contribute to the overall binding affinity and global features of molecular recognition, they are generally less critical for identifying SM modulators that act at a specific RNP interface.
+
+\subsection{The workflow applied to EV-A71's interaction with hnRNPA1}
+
 Taking EV-A71 as a model system, the \fputr\ is predicted to fold into six individual stem-loops, all of which have multiple interacting protein partners that contribute to the overall regulation of the viral lifecycle.
 As discussed in Section \ref{s:5p-targets}, the first stem-loop (SLI) is critical to viral replication \citep{shih2009,shih2014,tolbert2024a}. 
 The remaining stem-loops (SLII-SLVI) collectively make up the internal ribosomal entry site and control viral protein production by modulating its interactions with various protein partners \citep{sarnow2003,tolbert2017,Davila-Calderon2020,tolbert2024a}. 
 In its entirety, the \fputr\ binds more than 20 proteins that fall into various protein classes such as heterogeneous nuclear ribonucleoprotein (hnRNPs), enzymes, and transcription factors \citep{shih2009,Davila-Calderon2020}.
 Thus, by targeting specific RNP complexes, downstream aspects of the viral life cycle that are related to a given RNP complex can be altered. 
 
-A significant barrier to discovering novel SMs capable of inhibiting EV-A71 infection is the limited availability of experimentally determined, high-resolution structures of intact RNP complexes that regulate viral replication. 
-We hypothesize that AF3 can generate accurate sub-models of these RNP assemblies in which the predicted structures recapitulate the salient features of the  binding interface. 
-These AF3-generated models can then be refined using enhanced sampling MD simulations to produce ensembles that explore alternative local binding geometries suitable for virtual screening.
-In this framework, AF3 prediction functions primarily as a source of structurally informed  starting coordinates that appropriately constrain the binding interface.
-
-This hypothesis is motivated by the well-established observation that many RBPs recognize short, often degenerate sequence motifs situated within unpaired or conformationally flexible regions of RNA secondary structure (REF). 
-Currently, the Protein Data Bank PDB contains on the order of 5,000 distinct protein-RNA complexes, approximately 2000 of which represent non-ribosomal RNPs featuring RBPs bound to short cognate RNA segments. 
-These structures offer a rich training set from which AF3 can learn fundamental determinants of interfacial protein-RNA recognition.
-
-Building on this rationale, we propose to simplify the modeling task by restricting AF3 predictions to the minimal  
-RNP structural fragments necessary to recapitulate the local binding interface.  
-This strategy rests on the assumption that for SM virtual screening, the the local stereochemical environment primarily dictates docking accuracy and efficacy.  
-Although distal structural interactions contribute to the overall binding affinity and global features of molecular recognition, they are generally less critical for identifying SM modulators that act at a specific RNP interface.
-
 Figure \ref{fig:workflow} illustrates this strategy using the EV-A71 SLII domain and one of its cognate RBPs as a representative example. 
 The bulge loop of SLII serves as the primary recognition element for both hnRNP A1 and AUF1, which bind competitively to this site to modulate IRES-dependent translation efficiency (REF). 
-Several crystal and NMR structures exist (PDB codes =) for each protein bound to short RNA fragments resembling the SLII bulge motif (5\sprime -AAUAGCA-3\sprime), underscoring the suitability of this region for structure-guided modeling.  
+Several crystal and NMR structures exist \textbf{(PDB codes 4YOE, 2LYV, 8X0N, 6DCL, 1X0F, and  1WTB )} for each protein bound to short RNA or DNA fragments resembling the SLII bulge motif (5\sprime -AAUAGCA-3\sprime), underscoring the suitability of this region for structure-guided modeling.  
 An additional advantage of this sub-fragment approach is that isotopically labeled protein and RNA constructs can be made in parallel, enabling straightforward NMR chemical shift mapping to validate the local RNP binding interface.
 
 Our approach to generating an AF3 model of the hnRNP A1-SLII complex suitable for virtual screening involves designing a truncated SLII construct that retains the bulge loop and three base pairs flanking it on each side (SLII-sf). 
@@ -242,26 +245,27 @@ This targeted approach increases the likelihood that the predicted complex captu
 By isolating the relevant RNA element as a modular bulge fragment, we focus on the interaction surface where the RBP engages the target through its canonical B-sheet interface.  
 Matched isotopically-labeled protein and RNA constructs should be prepared in parallel, facilitating NMR based validation of the predicted binding interface.
 
-To perform a virtual screen, we'd first run Molecular Dynamics simulations (MD) of these complexes looking for pockets.
-Although MD is a medium-low throughput technique, it can help validate AF2 models since it is more physically grounded; consistency in key contacts across the model and simulated ensemble lend credibility to both \citep{hennig2025,vlamos2025,gsponer2025}.
-Using either adaptive sampling, or some other exploratory enhanced sampling such as Gaussian-accelerated MD, provides a rough sketch of the ensemble of the complex on a 'several weeks' timeline for common compute resources \citep{defabritiis2016,miao2021}.
-Shorter timescale simulations also permit the detection of cryptic pockets, which can often appear within hundreds of nanoseconds of replicate simulation \citep{bowman2023}.
-For identifying pockets, ligsite or f-pocket can be used, as well as the RNA specific update proposed by \citet{weeks2025} \citep{barnickel1997,tuffery2009}.
-Initial simulations in the group have found conformations that are interesting, and a starting model that is plausible, when this workflow is applied to EV71 SLII in complex with UP1 starting from an AF3 model (see Fig. \ref{fig:pocket-teaser}).
-
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=\linewidth]{figures/pocket-teaser.eps}
     \caption{Fragment design and simulated conformations for the SLII bulge from EV71A, in complex with the UP1 domain of hnRNPA1. Panel A shows the AF3 model we used to initialize our simulations. Here, the full-length RNA is in magenta, RRM1 of the simulated conformation is in yellow, the interdomain linker is in grey, and RRM2 is in blue. Panel B shows a relaxed structure from these simulations with PDB 4YOE as a reference.  4YOE is in cyan, with its RNA backbone shown in orange and bases in cyan, with the simulated conformation colored as in Panel A. Panels C and D show potentially useful pockets revealed in simulation; here they are highlighted by black ovals. C shows a pocket on the 90-degree rotation downward of the conformation from B. Panel D is a novel pocket that emerges between the interdomain linker and the body of RRM2 in some of the states observed in simulation.}
     \label{fig:pocket-teaser}
 \end{figure}
+
+To perform a virtual screen, we first run Molecular Dynamics simulations (MD) of these complexes looking for pockets.
+Although MD is a medium-low throughput technique, it can help validate AF3 models since it is more physically grounded; consistency in key contacts across the model and simulated ensemble lend credibility to both \citep{hennig2025,vlamos2025,gsponer2025}.
+Using either adaptive sampling, or some other exploratory enhanced sampling such as Gaussian-accelerated MD, provides a rough sketch of the ensemble of the complex on a 'several weeks' timeline for common compute resources \citep{defabritiis2016,miao2021}.
+Shorter timescale simulations also permit the detection of cryptic pockets, which can often appear within hundreds of nanoseconds of replicate simulation \citep{bowman2023}.
+For identifying pockets, ligsite or f-pocket can be used, as well as the RNA specific update proposed by \citet{weeks2025} \citep{barnickel1997,tuffery2009}.
+Initial simulations in the group have found conformations that are interesting, and a starting model that is plausible, when this workflow is applied to EV71 SLII in complex with UP1 starting from an AF3 model (see Fig. \ref{fig:pocket-teaser}).
+
 Docking would then be performed versus the ensembles that exhibit pockets using the Broad drug repurposing hub database, and using PopShift to aggregate the docking results \citep{golub2017,bowman2024}.
 Virtual screening versus an ensemble is important because complexes involving RNA result in dynamic pockets \citep{al-hashimi2019}.
 Even typically `rigid' proteins exhibit pocket dynamics \citep{gilson2017, smith2018}.
 PopShift addresses some issues with ensemble docking by using a discretized model of the ensemble (usually a Markov State Model (MSM)) to organize and reduce the number of receptor conformations to be docked to \cite{bowman2024}.
 Because PopShift scores which receptor conformations are preferred by different ligands, it can be used to understand rudimentary allosteric preferences sampled in the ligand-free ensemble, per the conformational selection hypothesis \citep{edelstein2011}.
 
-To experimentally validate the simulation results, we will employ a nuclear magnetic resonance (NMR)–based approach, a well-established method for characterizing interactions between RNA, proteins, and small molecules \citep{wuthrich1986nmr};\citep{RN90}. As shown in Figure 2, selective isotopic labeling of both components of the protein–RNA complex enables the simultaneous acquisition of interaction data for each binding partner from a single sample \citep{RN92}. Moreover, analysis of concentration-dependent chemical shift perturbations affords site-specific insight into intermolecular contacts, facilitating precise localization of the amino acid residues and nucleotides that collectively constitute the binding interface \citep{RN91}. Although the experimental workflow depicted in Figure 2 outlines an NMR-based approach, this component of the pipeline is readily adaptable and may be replaced with any suitable biophysical method capable of interrogating the macromolecular system of interest.
+To experimentally validate the simulation results, we will employ a nuclear magnetic resonance (NMR)–based approach, a well-established method for characterizing interactions between RNA, proteins, and small molecules \citep{wuthrich1986nmr};\citep{RN90}. As shown in Figure 2, selective isotopic labeling of both components of the protein–RNA complex enables the simultaneous acquisition of interaction data for each binding partner \citep{RN92}. Moreover, analysis of concentration-dependent chemical shift perturbations affords site-specific insight into intermolecular contacts, facilitating precise localization of the amino acid residues and nucleotides that collectively constitute the binding interface \citep{RN91}. Although the experimental workflow depicted in Figure 2 outlines an NMR-based approach, this component of the pipeline is readily adaptable and may be replaced with any suitable biophysical method capable of interrogating the macromolecular system of interest.
 
 \section{Discussion and Conclusion}
 
