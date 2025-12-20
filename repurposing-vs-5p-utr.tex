@@ -24,6 +24,7 @@
 % \usepackage{palatino}
 % \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \newcommand{\sprime}{\ensuremath{^\prime}}
 \newcommand{\fputr}{5\sprime-UTR}
 
@@ -169,7 +170,7 @@ For example, RBM24 has been shown to bind SL4 within the SARS-CoV-2 \fputr\ to s
 Complementing these experimental findings, machine learning approaches trained on RNA secondary structure have predicted several additional RBPs, including IGF2BP1, hnRNP A1, hnRNPK, and TIA1, to engage distinct SLs within the SARS-CoV-2 \fputr \citet{zhang2021a}.  
 Hence, these observations highlight the promise of targeting conserved RNP interfaces within the SARS-CoV-2 \fputr as a strategy for antiviral development.
 
-Taken together, these examples span a continuum from well-characterized to emerging viral systems and underscore how conserved structural motifs within viral \fputr-RNPs can be systematically prioritized for SM targeting using integrative structure prediction, conformational sampling, and biophysical validation.
+Taken together, these examples span a continuum from well-characterized to emerging viral systems and underscore how conserved structural motifs within viral \fputr-RNPs can be systematically prioritized for SM targeting.
 
 \section{There is evidence that FDA approved molecules bind to RNAs and modulate RNA-protein complexes}
 
@@ -260,7 +261,7 @@ Matched isotopically-labeled protein and RNA constructs should be prepared in pa
 
 To perform a virtual screen, we first subject the RNP complexes to MD simulations to identify transient and potentially binding pockets for SM modulators. Although MD is a medium-low throughput technique, it provides a physically grounded means of assessing the plausibility of  AF3 models; consistency of key intermolecular contacts across the initial model and simulated ensemble lends credibility to both \citep{hennig2025,vlamos2025,gsponer2025}. The use of adaptive sampling or other enhanced sampling, such as Gaussian-accelerated MD, enables efficient exploration of the conformational landscape and yields an approximate view  of the ensemble on a timescale of several weeks using commonly available computational resources \citep{defabritiis2016,miao2021}. Even shorter timescale simulations can be informative, as cryptic pockets can emerge within hundreds of nanoseconds across replicate trajectories \citep{bowman2023}.  Potential binding pockets can be identified using established tools such as ligsite or f-pocket can be used, as well as the RNA specific updates proposed for larger structured RNAs \citep{weeks2025, barnickel1997,tuffery2009}.
 
-Notably, initial simulations  have found RNP complexes that are interesting, and starting ensemble cluster-centers that are plausible, when this workflow outlined in Figure 2 is applied to EV-A71 SLII-fr in complex with UP1  (see Fig. \ref{fig:pocket-teaser}).  
+Notably, initial simulations  have found RNP complexes that are interesting, and starting ensemble cluster-centers that are plausible, when this workflow outlined in Fig. \ref{fig:workflow} is applied to EV-A71 SLII-fr in complex with UP1  (see Fig. \ref{fig:pocket-teaser}).  
 Docking would then be performed against ensemble conformations that exhibit well-defined pockets using molecules from the Broad drug repurposing hub database, and aggregating results with PopShift \citep{golub2017,bowman2024}. 
 
 Ensemble-based virtual screening is particularly important for RNA containing complexes, since RNA conformational dynamics often give rise to pockets that are transient \citep{al-hashimi2019}. 
@@ -269,7 +270,7 @@ PopShift addresses challenges associated with ensemble docking by using a discre
 Because PopShift scores the receptor conformations that are preferred by different ligands, it can be used to understand rudimentary allosteric preferences sampled in the ligand-free ensemble, per the conformational selection hypothesis \citep{edelstein2011}.
 This could be particularly helpful for class 5 targets (see Fig. \ref{fig:5p-utr-targets}).
 
-Importantly, the computational strategy outlined here must be experimentally validated using orthogonal approaches.  As depicted in Figure 2, the proposed workflow incorporates NMR-based validation \citep{wuthrich1986nmr};\citep{RN90} at the earliest stages of the project, ensuring that model refinement and decision points occur iteratively and in near real time.  Selective isotopic labeling of both components of the RNP complex enables the simultaneous acquisition of interaction data for each binding partner \citep{RN92}.  Analysis of concentration-dependent chemical shift perturbations further provides site-specific insight into intermolecular contacts, allowing precise localization of the amino acid residues and nucleotides that collectively define the binding interface \citep{RN91}. While Figure 2 outlines an NMR-centric validation strategy, this component of the pipeline is modular and can be readily adapted to alternative biophysical methods capable of interrogating the RNP complex of interest.
+Importantly, the computational strategy outlined here must be experimentally validated using orthogonal approaches.  As depicted in Fig. \ref{fig:workflow}, the proposed workflow incorporates NMR-based validation \citep{wuthrich1986nmr};\citep{RN90} at the earliest stages of the project, ensuring that model refinement and decision points occur iteratively and in near real time.  Selective isotopic labeling of both components of the RNP complex enables the simultaneous acquisition of interaction data for each binding partner \citep{RN92}.  Analysis of concentration-dependent chemical shift perturbations further provides site-specific insight into intermolecular contacts, allowing precise localization of the amino acid residues and nucleotides that collectively define the binding interface \citep{RN91}. While Fig. \ref{fig:workflow} outlines an NMR-centric validation strategy, this component of the pipeline is modular and can be readily adapted to alternative biophysical methods capable of interrogating the RNP complex of interest.
 
 \section{Discussion and Conclusion}
 
