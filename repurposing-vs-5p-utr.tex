@@ -24,6 +24,7 @@
 % \usepackage{palatino}
 % \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
+\usepackage{textcomp}
 \newcommand{\sprime}{\ensuremath{^\prime}}
 \newcommand{\fputr}{5\sprime-UTR}
 
@@ -35,7 +36,7 @@
 
 \def\keyFont{\fontsize{8}{11}\helveticabold }
 \def\firstAuthorLast{Smith {et~al.}} %use et al only if is more than 1 author
-\def\Authors{Louis G. Smith\,$^{1,{\dag}}$, \textbf{Solomon Attionu}\,$^{1,\dag}$, \textbf{Sudeshi M. Abedeera}\,$^{1}$, \textbf{Barrington Henry}\,$^{1}$, \textbf{Srinivasa Penumutchu}\,$^{1,2}$ and \textbf{Blanton S. Tolbert}\,$^{1,2,*}$}
+\def\Authors{Louis G. Smith\,$^{1,{\dag}}$, \textbf{Solomon Attionu}\,$^{1,{\dag}}$, \textbf{Sudeshi M. Abedeera}\,$^{1}$, \textbf{Barrington Henry}\,$^{1}$, \textbf{Srinivasa Penumutchu}\,$^{1,2}$ and \textbf{Blanton S. Tolbert}\,$^{1,2,*}$}
 % Affiliations should be keyed to the author's name with superscript numbers and be listed as follows: Laboratory, Institute, Department, Organization, City, State abbreviation (USA, Canada, Australia), and Country (without detailed address information such as city zip codes or street names).
 % If one of the authors has a change of address, list the new address below the correspondence details using a superscript symbol and use the same symbol to indicate the author in the author list.
 \def\Address{$^{1}$Stellar-Chance Laboratories, Institute for RNA Innovation, Department of Biochemistry \& Biophysics, University of Pennsylvania, Philadelphia, PA 19104, USA \\
@@ -155,7 +156,8 @@ As a positive-strand RNA virus,  SARS-CoV-2 likewise relies on its \fputr to reg
 
 Emerging evidence further suggests that host RBP-viral RNA interactions play important roles in SARS-CoV-2 replication and may present additional therapeutic opportunities.  For example,  RBM24 has been shown to bind SL4 within the SARS-CoV-2 \fputr\ to suppress SARS-CoV-2 replication and suppress viral replication \citet{pei2023} . Complementing these experimental findings, machine learning approaches trained on RNA secondary structure have predicted several additional RBPs, including IGF2BP1, hnRNP A1, hnRNPK, and TIA1, to engage distinct SLs within the SARS-CoV-2 \fputr  \citet{zhang2021a}.  Hence, these observations highlight the promise of targeting conserved RNP interfaces within the SARS-CoV-2 \fputr as a strategy for antiviral development.
 
-Taken together, these examples span a continuum from well-characterized to emerging viral systems and underscore how conserved structural motifs within viral 5′ untranslated region RNPs can be systematically prioritized for SM targeting using integrative structure prediction, conformational sampling, and biophysical validation.
+
+Taken together, these examples span a continuum from well-characterized to emerging viral systems and underscore how conserved structural motifs within viral 5′-UTRs can be systematically prioritized for SM targeting.
 
 \section{There is evidence that FDA approved molecules bind to RNAs and modulate RNA-protein complexes}
 
@@ -271,7 +273,7 @@ The authors declare that the research was conducted in the absence of any commer
 
 \section*{Author Contributions}
 
-Conceptualization: \textbf{BST;} Writing, review and editing: LGS, SA, SMA, BH, SP}, and \textbf{BST} Resources: \textbf{BST}; Project Management: \textbf{LGS} and \textbf{BST}; Methodology: \textbf{LGS, SMA}, and \textbf{SP}
+Conceptualization: \textbf{BST;} Writing, review and editing: \textbf{LGS, SA, SMA, BH, SP}, and \textbf{BST} Resources: \textbf{BST}; Project Management: \textbf{LGS} and \textbf{BST}; Methodology: \textbf{LGS, SMA}, and \textbf{SP}
 
 \section*{Funding}
 This work was supported by grants from the National Institute of Allergy and Infectious Diseases of the National Institutes of Health, U54 AI170660 and R01 AI150830 to BST and from the Howard Hughes Medical Institute to BST.
